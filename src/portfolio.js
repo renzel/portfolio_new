@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Software Engineer 🚀 with expertise in building scalable and maintainable applications using modern technologies."
   ),
-  resumeLink:
-    "", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,12 +48,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
+  subTitle:
+    "FULL STACK DEVELOPER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
   skills: [
     emoji(
       "⚡ Design and implement responsive, performant front-end applications with modern JavaScript frameworks"
     ),
-    emoji("⚡ Develop RESTful APIs and microservices with a focus on clean architecture and testability"),
+    emoji(
+      "⚡ Develop RESTful APIs and microservices with a focus on clean architecture and testability"
+    ),
     emoji(
       "⚡ Implement CI/CD pipelines and infrastructure as code for reliable deployment and scaling"
     )
@@ -65,17 +67,10 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -89,8 +84,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "django",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "npm",
@@ -101,20 +96,25 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
+      skillName: "postgres",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "gcloud",
+      fontAwesomeClassname: "fab fa-google"
     },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
+
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -142,7 +142,9 @@ const educationInfo = {
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2013 - April 2017",
       desc: "Focused on software engineering fundamentals, algorithms, and systems design. Participated in hackathons and coding competitions.",
-      descBullets: ["Developed a real-time collaborative code editor as senior project"]
+      descBullets: [
+        "Developed a real-time collaborative code editor as senior project"
+      ]
     }
   ]
 };
