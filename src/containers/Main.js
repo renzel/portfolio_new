@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -15,8 +15,8 @@ import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
-import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen} from "../portfolio";
+//import SplashScreen from "./splashScreen/SplashScreen";
+//import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
@@ -24,7 +24,7 @@ import "./Main.scss";
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
+  /* const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Main = () => {
         clearTimeout(splashTimer);
       };
     }
-  }, []);
+  }, []); */
 
   const changeTheme = () => {
     setIsDark(!isDark);
@@ -47,9 +47,6 @@ const Main = () => {
     <div className={isDark ? "dark-mode" : null}>
       <div style={{maxWidth: "1400px", margin: "0 auto"}}>
         <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-          {isShowingSplashAnimation && splashScreen.enabled ? (
-            <SplashScreen />
-          ) : (
             <>
               <Header />
               <Greeting />
@@ -65,10 +62,8 @@ const Main = () => {
               <Twitter />
               <Podcast />
               <Profile />
-              {/* <Footer /> */}
               <ScrollToTopButton />
             </>
-          )}
         </StyleProvider>
       </div>
     </div>
