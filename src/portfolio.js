@@ -23,7 +23,7 @@ const greeting = {
   username: "Trond Rensel",
   title: "I'm Trond",
   subTitle: emoji(
-    "A passionate Software Developer 🚀 having experience of building valuable software."
+    "A passionate Software Engineer 🚀 with expertise in building scalable and maintainable applications using modern technologies."
   ),
   resumeLink:
     "", // Set to empty to hide the button
@@ -49,14 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "FULL STACK DEVELOPER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and implement responsive, performant front-end applications with modern JavaScript frameworks"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Develop RESTful APIs and microservices with a focus on clean architecture and testability"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Implement CI/CD pipelines and infrastructure as code for reliable deployment and scaling"
     )
   ],
 
@@ -130,10 +130,10 @@ const educationInfo = {
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Specialized in distributed systems and machine learning algorithms. Contributed to open-source projects and published research on scalable data processing.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Implemented a distributed database system as capstone project",
+        "Developed optimization algorithms for large-scale data processing"
       ]
     },
     {
@@ -141,8 +141,8 @@ const educationInfo = {
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Focused on software engineering fundamentals, algorithms, and systems design. Participated in hackathons and coding competitions.",
+      descBullets: ["Developed a real-time collaborative code editor as senior project"]
     }
   ]
 };
@@ -153,15 +153,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
+      Stack: "Frontend Development", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Backend Architecture",
       progressPercentage: "80%"
     },
     {
-      Stack: "DevOps",
+      Stack: "DevOps & Cloud Infrastructure",
       progressPercentage: "70%"
     }
   ],
@@ -174,29 +174,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
+      role: "Senior Software Engineer",
       company: "Facebook",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Lead developer for critical infrastructure services supporting millions of daily active users.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Architected and implemented scalable microservices using Node.js and TypeScript",
+        "Optimized database queries resulting in 40% reduction in API response times"
       ]
     },
     {
-      role: "Front-End Developer",
+      role: "Frontend Engineer",
       company: "Quora",
       companylogo: require("./assets/images/quoraLogo.png"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Developed and maintained core React components for the main application, focusing on performance optimization and accessibility compliance. Implemented state management solutions using Redux and context API."
     },
     {
       role: "Software Engineer Intern",
       company: "Airbnb",
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Contributed to backend services using Ruby on Rails and implemented automated testing strategies. Collaborated with the data science team to develop APIs for analytics dashboards."
     }
   ]
 };
