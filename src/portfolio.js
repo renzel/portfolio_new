@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Trond Rensel",
+  username: "Rensel",
   title: "I'm Trond",
   subTitle: emoji(
     "A passionate Software Engineer 🚀 with expertise in building scalable and maintainable applications using modern technologies."
@@ -49,7 +49,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "FULL STACK DEVELOPER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
+    "FULLSTACK DEVELOPER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
   skills: [
     emoji(
       "⚡ Design and implement responsive, performant front-end applications with modern JavaScript frameworks"
@@ -164,7 +164,7 @@ const techStack = {
     },
     {
       Stack: "DevOps & Cloud Infrastructure",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
