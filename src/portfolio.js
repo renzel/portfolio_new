@@ -34,7 +34,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/renzel",
   linkedin: "https://www.linkedin.com/in/trond-%C3%B8stby-rensel-618232137/",
-  gmail: "tr.rensel@gmail.com",
+  gmail: "trond@rensel.dev",
   //gitlab: "https://gitlab.com/saadpasta",
   //facebook: "https://www.facebook.com/saad.pasta7",
   //medium: "https://medium.com/@saadpasta",
@@ -375,7 +375,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   //number: "+92-0000000000",
-  email_address: "tr.rensel@gmail.com"
+  email_address: "trond@rensel.dev"
 };
 
 // Twitter Section
