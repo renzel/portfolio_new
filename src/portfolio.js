@@ -23,7 +23,7 @@ const greeting = {
   username: "Rensel",
   title: "I'm Trond",
   subTitle: emoji(
-    "A passionate Software Engineer 🚀 with expertise in building scalable and maintainable applications using modern technologies."
+    "A passionate Software Engineer 🚀 specializing in AI engineering and focusing on building solutions that create user value"
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -67,57 +67,68 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python",
     },
+    
     {
-      skillName: "c-sharp",
-      fontAwesomeClassname: "fab fa-microsoft"
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Machine Learning",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Prompt Engineering",
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
-      skillName: "django",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "postgres",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "gcloud",
-      fontAwesomeClassname: "fab fa-google"
-    },
-
-    {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "kubernetes",
+      skillName: "Kubernetes",
       fontAwesomeClassname: "fas fa-dharmachakra"
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git"
+    },
+
+    {
+      skillName: "C#",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+
+    {
+      skillName: "Nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "Elasticsearch",
+      fontAwesomeClassname: "fas fa-search"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Google Cloud",
+      fontAwesomeClassname: "fab fa-google"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -131,12 +142,13 @@ const educationInfo = {
     {
       schoolName: "University of South-East Norway",
       logo: require("./assets/images/usn.png"),
-      subHeader: "Master of Science in Systems Engineering with Embedded Systems",
+      subHeader:
+        "Master of Science in Systems Engineering with Embedded Systems",
       duration: "2017 – 2019",
       desc: "Specialized in embedded systems design and implementation with focus on real-time operating systems, hardware-software integration, and IoT solutions.",
       descBullets: [
         "Completed advanced coursework in Advanced embedded systems, low level and FPGA programming",
-        "Developed IoT monitoring system using microcontrollers",
+        "Developed IoT monitoring system using microcontrollers"
       ]
     },
     {
@@ -193,29 +205,44 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Senior Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lead developer for critical infrastructure services supporting millions of daily active users.",
+      role: "Fullstack Developer / DevOps / Data Scientist",
+      company: "UPSTACKED",
+      companylogo: require("./assets/images/upstacked.png"),
+      date: "November 2018 – February 2024",
+      desc: "All-in-One centralized operations platform SaaS - Fullstack development, DevOps and data science",
       descBullets: [
-        "Architected and implemented scalable microservices using Node.js and TypeScript",
-        "Optimized database queries resulting in 40% reduction in API response times"
+        "React and state management with Redux",
+        "Python/Django with databases like Postgres, MySQL, and Elasticsearch",
+        "Classification algorithms via sklearn and Apache Spark, implemented anomaly detection for cybersecurity",
+        "GCP, Kubernetes, Docker, Microservices and Gitlab as CI/CD"
       ]
     },
     {
-      role: "Frontend Engineer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Developed and maintained core React components for the main application, focusing on performance optimization and accessibility compliance. Implemented state management solutions using Redux and context API."
+      role: "Fullstack Developer",
+      company: "STATENS VEGVESEN",
+      companylogo: require("./assets/images/svv.png"),
+      date: "June 2021 – August 2023",
+      desc: "Norwegian road authority - Created a new solution for monitoring both infrastructure and applications",
+      descBullets: [
+        "React/TypeScript and .NET/C#",
+        "Virtual machines and containers with VMware and Docker",
+        "Scripting/data integration using Python and Bash",
+        "Kubernetes and Tomcat for application management"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Contributed to backend services using Ruby on Rails and implemented automated testing strategies. Collaborated with the data science team to develop APIs for analytics dashboards."
+      role: "DevOps Engineer / Site Reliability Engineer",
+      company: "RUTER",
+      companylogo: require("./assets/images/ruter.png"),
+      date: "November 2019 – March 2020",
+      desc: "DevOps and Site Reliability Engineer - Oslo's public transportation company",
+      descBullets: [
+        "Linux and AWS for administration and robust services",
+        "PostgreSQL, MySQL, and Cassandra for data management",
+        "Apache Kafka and Kubernetes for application orchestration",
+        "Terraform for infrastructure as code in AWS",
+        "Datadog for monitoring and performance optimization"
+      ]
     }
   ]
 };
