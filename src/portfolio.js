@@ -70,7 +70,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
-
+    {
+      skillName: "c-sharp",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -126,24 +129,34 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Specialized in distributed systems and machine learning algorithms. Contributed to open-source projects and published research on scalable data processing.",
+      schoolName: "University of South-East Norway",
+      logo: require("./assets/images/usn.png"),
+      subHeader: "Master of Science in Systems Engineering with Embedded Systems",
+      duration: "2017 – 2019",
+      desc: "Specialized in embedded systems design and implementation with focus on real-time operating systems, hardware-software integration, and IoT solutions.",
       descBullets: [
-        "Implemented a distributed database system as capstone project",
-        "Developed optimization algorithms for large-scale data processing"
+        "Completed advanced coursework in Advanced embedded systems, low level and FPGA programming",
+        "Developed IoT monitoring system using microcontrollers",
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Focused on software engineering fundamentals, algorithms, and systems design. Participated in hackathons and coding competitions.",
+      schoolName: "Auckland University of Technology",
+      logo: require("./assets/images/aut.png"),
+      subHeader: "Exchange program, Bachelor degree",
+      duration: "2016 – 2016",
+      desc: "Exchange program focused on international experience and specialized coursework.",
+      descBullets: []
+    },
+    {
+      schoolName: "University of Vestlandet",
+      logo: require("./assets/images/hvl.png"),
+      subHeader: "Bachelor in Electronics",
+      duration: "2014 – 2017",
+      desc: "Focused on electronics fundamentals, circuit design, digital systems, and practical applications.",
       descBullets: [
-        "Developed a real-time collaborative code editor as senior project"
+        "Completed embedded project on health monitoring system for elderly",
+        "Developed strong foundation in both analog and digital electronics through laboratory work and project-based learning.",
+        "Completed courses with hands-on experience with microcontrollers, PCB design, and signal processing techniques."
       ]
     }
   ]
@@ -157,6 +170,10 @@ const techStack = {
     {
       Stack: "Frontend Development", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "AI engineering",
+      progressPercentage: "70%"
     },
     {
       Stack: "Backend Architecture",
