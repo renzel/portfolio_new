@@ -13,7 +13,7 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">Selected Experiences</h1>
+              <h1 className="experience-heading" style={{marginBottom: "60px"}}>Selected Experiences</h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
                   return (

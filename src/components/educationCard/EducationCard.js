@@ -22,7 +22,7 @@ export default function EducationCard({school}) {
   return (
     <div>
       <Fade left duration={1000}>
-        <div className="education-card">
+        <div className="education-card" style={{marginBottom: "20px"}}>
           {school.logo && (
             <div className="education-card-left">
               <img
