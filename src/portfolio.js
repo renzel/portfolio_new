@@ -49,16 +49,16 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "FULLSTACK DEVELOPER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
+    "SOFTWARE ENGINEER PASSIONATE ABOUT BUILDING ROBUST AND SCALABLE SOLUTIONS",
   skills: [
+    emoji(
+      "⚡ Design and implement AI-powered RAG chatbots that leverage vector databases for enhanced knowledge retrieval and contextual responses"
+    ),
     emoji(
       "⚡ Design and implement responsive, performant front-end applications with modern JavaScript frameworks"
     ),
     emoji(
       "⚡ Develop RESTful APIs and microservices with a focus on clean architecture and testability"
-    ),
-    emoji(
-      "⚡ Implement CI/CD pipelines and infrastructure as code for reliable deployment and scaling"
     )
   ],
 
@@ -68,9 +68,9 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-python",
+      fontAwesomeClassname: "fab fa-python"
     },
-    
+
     {
       skillName: "React",
       fontAwesomeClassname: "fab fa-react"
@@ -205,6 +205,19 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "AI Engineer",
+      company: "TRIPLETEX",
+      companylogo: require("./assets/images/tt.png"),
+      date: "March 2024 – Present",
+      desc: "AI Engineer - Norways largest accounting software company",
+      descBullets: [
+        "AI Copilot handling all customer support requests",
+        "Python and FastAPI for chatbot integration",
+        "OpenAI, Anthropic and Gemini for AI models",
+        "PostgreSQL vector store"
+      ]
+    },
+    {
       role: "Fullstack Developer / DevOps / Data Scientist",
       company: "UPSTACKED",
       companylogo: require("./assets/images/upstacked.png"),
@@ -228,20 +241,6 @@ const workExperiences = {
         "Virtual machines and containers with VMware and Docker",
         "Scripting/data integration using Python and Bash",
         "Kubernetes and Tomcat for application management"
-      ]
-    },
-    {
-      role: "DevOps Engineer / Site Reliability Engineer",
-      company: "RUTER",
-      companylogo: require("./assets/images/ruter.png"),
-      date: "November 2019 – March 2020",
-      desc: "DevOps and Site Reliability Engineer - Oslo's public transportation company",
-      descBullets: [
-        "Linux and AWS for administration and robust services",
-        "PostgreSQL, MySQL, and Cassandra for data management",
-        "Apache Kafka and Kubernetes for application orchestration",
-        "Terraform for infrastructure as code in AWS",
-        "Datadog for monitoring and performance optimization"
       ]
     }
   ]
