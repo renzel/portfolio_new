@@ -55,10 +55,10 @@ const skillsSection = {
       "⚡ Design and implement AI-powered RAG chatbots that leverage vector databases for enhanced knowledge retrieval and contextual responses"
     ),
     emoji(
-      "⚡ Design and implement responsive, performant front-end applications with modern JavaScript frameworks"
+      "⚡ Integrated chatbot with Salesforce API for an all-in-one support experience, enabling seamless customer interactions and automated case management"
     ),
     emoji(
-      "⚡ Develop RESTful APIs and microservices with a focus on clean architecture and testability"
+      "⚡ Design and implement fullstack apppliation from archetecture to design and development"
     )
   ],
 
@@ -212,6 +212,7 @@ const workExperiences = {
       desc: "AI Engineer - Norways largest accounting software company",
       descBullets: [
         "AI Copilot handling all customer support requests",
+        "Integration with Salesforce CRM",
         "Python and FastAPI for chatbot integration",
         "OpenAI, Anthropic and Gemini for AI models",
         "PostgreSQL vector store"
