@@ -23,7 +23,7 @@ const greeting = {
   username: "Rensel",
   title: "Hi! I'm Trond",
   subTitle: emoji(
-    "A passionate Software Engineer 🚀 specializing in AI engineering and focusing on building solutions that create user value"
+    "A passionate Software Engineer 🚀 Specializing in AI engineering and focusing on building solutions that create user value"
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true

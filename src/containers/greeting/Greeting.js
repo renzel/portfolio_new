@@ -2,11 +2,9 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -54,14 +52,30 @@ export default function Greeting() {
           </div>
           <Fade down duration={1000}>
             <div className="greeting-image-div">
-              {illustration.animated ? (
-                <DisplayLottie animationData={landingPerson} />
-              ) : (
+              <div style={{ position: "relative", width: "70%" }}>
                 <img
-                  alt="man sitting on table"
-                  src={require("../../assets/images/manOnTable.svg")}
+                  alt="Headshot of Rensel"
+                  src={require("../../assets/images/me.jpg")}
+                  style={{ borderRadius: "1rem", width: "100%", height: "auto" }}
                 ></img>
-              )}
+               {/*  <div 
+                  style={{ 
+                    position: "absolute", 
+                    bottom: "4px", 
+                    left: "0", 
+                    right: "0", 
+                    backgroundColor: "rgba(0, 0, 0, 0.7)", 
+                    color: "white", 
+                    padding: "10px", 
+                    borderBottomLeftRadius: "1rem", 
+                    borderBottomRightRadius: "1rem",
+                    textAlign: "center"
+                  }}
+                >
+                  <div style={{ fontWeight: "bold" }}>Trond Rensel</div>
+                  <div style={{ fontSize: "0.9rem" }}>Senior Software & AI Engineer</div>
+                </div> */}
+              </div>
             </div>
           </Fade>
         </div>

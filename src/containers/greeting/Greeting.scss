@@ -115,11 +115,14 @@
   .greeting-main {
     display: block;
   }
-  .greeting-image-div {
-    height: 256px;
-  }
+  
 }
-
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 @media (max-width: 320px) {
   .main {
     width: auto;
