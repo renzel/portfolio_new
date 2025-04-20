@@ -55,7 +55,7 @@ export default function Greeting() {
               <div style={{ position: "relative", width: "70%" }}>
                 <img
                   alt="Headshot of Rensel"
-                  src={require("../../assets/images/me.jpg")}
+                  src={require("../../assets/images/me.png")}
                   style={{ borderRadius: "1rem", width: "100%", height: "auto" }}
                 ></img>
                {/*  <div 
