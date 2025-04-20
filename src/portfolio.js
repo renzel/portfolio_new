@@ -80,6 +80,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
+      skillName: "Nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
       skillName: "Machine Learning",
       fontAwesomeClassname: "fas fa-robot"
     },
