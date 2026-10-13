@@ -33,7 +33,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/renzel",
-  linkedin: "https://www.linkedin.com/in/trond-%C3%B8stby-rensel-618232137/",
+  linkedin: "https://www.linkedin.com/in/trond-rensel-618232137/",
   gmail: "trond@rensel.dev",
   //gitlab: "https://gitlab.com/saadpasta",
   //facebook: "https://www.facebook.com/saad.pasta7",
@@ -55,10 +55,10 @@ const skillsSection = {
       "⚡ Design and implement AI-powered RAG chatbots that leverage vector databases for enhanced knowledge retrieval and contextual responses"
     ),
     emoji(
-      "⚡ Integrated chatbot with Salesforce API for an all-in-one support experience, enabling seamless customer interactions and automated case management"
+      "⚡ Connect AI assistants to business systems and APIs through tools and MCP servers"
     ),
     emoji(
-      "⚡ Design and implement fullstack apppliation from archetecture to design and development"
+      "⚡ Design and build full-stack applications, from architecture to design and development"
     )
   ],
 
@@ -78,6 +78,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "Nodejs",
@@ -112,11 +116,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "C#",
       fontAwesomeClassname: "fab fa-microsoft"
     },
-
-    {
-      skillName: "Nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
     {
       skillName: "Elasticsearch",
       fontAwesomeClassname: "fas fa-search"
@@ -144,14 +143,14 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "University of South-East Norway",
+      schoolName: "University of South-Eastern Norway",
       logo: require("./assets/images/usn.png"),
       subHeader:
         "Master of Science in Systems Engineering with Embedded Systems",
       duration: "2017 – 2019",
       desc: "Specialized in embedded systems design and implementation with focus on real-time operating systems, hardware-software integration, and IoT solutions.",
       descBullets: [
-        "Completed advanced coursework in Advanced embedded systems, low level and FPGA programming",
+        "Completed advanced coursework in embedded systems, low-level and FPGA programming",
         "Developed IoT monitoring system using microcontrollers"
       ]
     },
@@ -164,7 +163,7 @@ const educationInfo = {
       descBullets: []
     },
     {
-      schoolName: "University of Vestlandet",
+      schoolName: "Western Norway University of Applied Sciences",
       logo: require("./assets/images/hvl.png"),
       subHeader: "Bachelor in Electronics",
       duration: "2014 – 2017",
@@ -213,21 +212,15 @@ const workExperiences = {
       company: "TRIPLETEX",
       companylogo: require("./assets/images/tt.png"),
       date: "March 2024 – Present",
-      desc: "AI Engineer - Norways largest accounting software company",
-      descBullets: [
-        "AI Copilot handling all customer support requests",
-        "Integration with Salesforce CRM",
-        "Python and FastAPI for chatbot integration",
-        "OpenAI, Anthropic and Gemini for AI models",
-        "PostgreSQL vector store"
-      ]
+      desc: "AI engineering at Tripletex, cloud accounting software for small businesses in Norway",
+      descBullets: []
     },
     {
-      role: "Fullstack Developer / DevOps / Data Scientist",
+      role: "Software Developer at Bluetree",
       company: "UPSTACKED",
       companylogo: require("./assets/images/upstacked.png"),
       date: "November 2018 – February 2024",
-      desc: "All-in-One centralized operations platform SaaS - Fullstack development, DevOps and data science",
+      desc: "Bluetree project: Upstacked, an all-in-one centralized operations SaaS. Full-stack development, DevOps and data science",
       descBullets: [
         "React and state management with Redux",
         "Python/Django with databases like Postgres, MySQL, and Elasticsearch",
@@ -236,11 +229,11 @@ const workExperiences = {
       ]
     },
     {
-      role: "Fullstack Developer",
+      role: "Software Developer at Bluetree",
       company: "STATENS VEGVESEN",
       companylogo: require("./assets/images/svv.png"),
       date: "June 2021 – August 2023",
-      desc: "Norwegian road authority - Created a new solution for monitoring both infrastructure and applications",
+      desc: "Bluetree project for the Norwegian road authority: a new solution for monitoring both infrastructure and applications",
       descBullets: [
         "React/TypeScript and .NET/C#",
         "Virtual machines and containers with VMware and Docker",
