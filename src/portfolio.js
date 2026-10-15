@@ -188,7 +188,7 @@ const techStack = {
     },
     {
       Stack: "AI engineering",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Backend Architecture",
