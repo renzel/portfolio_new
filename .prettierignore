@@ -1,4 +1,7 @@
-src/serviceWorker.js
 package-lock.json
-src/assets/lottie
-
+build
+.claude
+.impeccable
+.github/skills
+*.webp.json
+*.ico.json
