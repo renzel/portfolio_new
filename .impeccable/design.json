@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T09:30:50+00:00",
+  "title": "Design System: Rensel",
+  "extensions": {
+    "colorMeta": {
+      "part": {
+        "role": "primary",
+        "displayName": "Part Orange",
+        "canonical": "#ff5a1f",
+        "tonalRamp": [
+          "#350900",
+          "#611900",
+          "#952b00",
+          "#c9410f",
+          "#e84d14",
+          "#ff5a1f",
+          "#ffb19a",
+          "#ffe0d7"
+        ]
+      },
+      "part-left": {
+        "role": "primary",
+        "displayName": "Part Orange, Left Face",
+        "canonical": "#e84d14",
+        "tonalRamp": [
+          "#350900",
+          "#611900",
+          "#952b00",
+          "#c9410f",
+          "#e84d14",
+          "#ff5a1f",
+          "#ffb19a",
+          "#ffe0d7"
+        ]
+      },
+      "part-right": {
+        "role": "primary",
+        "displayName": "Part Orange, Right Face",
+        "canonical": "#c9410f",
+        "tonalRamp": [
+          "#350900",
+          "#611900",
+          "#952b00",
+          "#c9410f",
+          "#e84d14",
+          "#ff5a1f",
+          "#ffb19a",
+          "#ffe0d7"
+        ]
+      },
+      "on-part": {
+        "role": "primary",
+        "displayName": "Ink on Part",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Manual Paper",
+        "canonical": "#f4f4f1",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Manual Ink",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#4a4a45",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Construction Grey",
+        "canonical": "#8c8c86",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Lattice Grey",
+        "canonical": "#cfcfc9",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "face-left": {
+        "role": "neutral",
+        "displayName": "Left Face",
+        "canonical": "#e7e7e3",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      },
+      "face-right": {
+        "role": "neutral",
+        "displayName": "Right Face",
+        "canonical": "#d6d6d1",
+        "tonalRamp": [
+          "#141414",
+          "#4a4a45",
+          "#6a6a65",
+          "#8c8c86",
+          "#cfcfc9",
+          "#d6d6d1",
+          "#e7e7e3",
+          "#f4f4f1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The role line of the cover title, once per page."
+      },
+      "display-name": {
+        "displayName": "Display Name",
+        "purpose": "The name line 12px above the display line, completing the title lockup."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Step numbers: Construction Grey at rest, Part Orange, Right Face on the current step."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, the helpline question included."
+      },
+      "headline-contact": {
+        "displayName": "Headline Contact",
+        "purpose": "The email address on the helpline, underlined 3px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step titles in the assembly sequence."
+      },
+      "title-part": {
+        "displayName": "Title Part",
+        "purpose": "Part names in the parts tray."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The promise under the cover title, max 30ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text in ink or Soft Ink, 30ch to 70ch."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "The primary button label."
+      },
+      "action-small": {
+        "displayName": "Action Small",
+        "purpose": "The masthead tab label."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation links; the same 15px step carries the legend at 500 and captions and table text at 400."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Facts in the ink strip; the colophon at 400 in Soft Ink."
+      },
+      "table-head": {
+        "displayName": "Table Head",
+        "purpose": "Spec-table column and group heads, sentence case."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "The letter inside a circled part tag."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "\"Rensel\" in the masthead."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Exponential ease-out shared by every slide, nudge and colour change. It never overshoots."
+      },
+      {
+        "name": "part-slide",
+        "value": "transform 0.9s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "A part travels along its explosion line into its seat."
+      },
+      {
+        "name": "mark-snap",
+        "value": "opacity 0s 0.75s",
+        "purpose": "Click marks, the detail circle and the done tick switch on in a single frame once the slide has landed."
+      },
+      {
+        "name": "colour-change",
+        "value": "fill 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "A part's faces turn to the orange set while it is the newest part; the current step numeral changes colour on the same timing."
+      },
+      {
+        "name": "explode-switch",
+        "value": "opacity, no transition",
+        "purpose": "An explosion line switches off the moment its part starts to slide in, and back on when the part leaves."
+      },
+      {
+        "name": "control-hover",
+        "value": "background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Orange controls shift to Part Orange, Left Face on hover."
+      },
+      {
+        "name": "arrow-nudge",
+        "value": "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The primary button's arrow slides 4px toward the action on hover."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px)",
+        "purpose": "The primary button drops 1px while pressed, with no transition."
+      },
+      {
+        "name": "anchor-scroll",
+        "value": "scroll-behavior: smooth; scroll-padding-top: calc(64px + 16px)",
+        "purpose": "In-page jumps glide and clear the sticky masthead."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none; scroll-behavior: auto",
+        "purpose": "Under prefers-reduced-motion every state appears at once, without movement."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "strip-grid",
+        "value": "1359px"
+      },
+      {
+        "name": "tray-two-up",
+        "value": "1080px"
+      },
+      {
+        "name": "phone",
+        "value": "900px"
+      },
+      {
+        "name": "narrow",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The place to act: a nearly square orange block with a drawn arrow that slides toward the action on hover.",
+      "html": "<a class=\"ds-button\" href=\"#\">Start a project <svg class=\"ds-button-arrow\" viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M3 10h13M11 4.5 16.5 10 11 15.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-button { display: inline-flex; align-items: center; gap: 12px; padding: 16px 22px; background: var(--part, #ff5a1f); color: var(--on-part, #141414); font: 700 1.0625rem/1.55 var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); text-decoration: none; border-radius: 3px; transition: background-color 0.2s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-button-arrow { display: block; width: 18px; height: 18px; transition: transform 0.35s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-button:hover { background: var(--part-left, #e84d14); } .ds-button:hover .ds-button-arrow { transform: translateX(4px); } .ds-button:active { transform: translateY(1px); } .ds-button:focus-visible { outline: 2px solid var(--ink, #141414); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-button-arrow { transition: none; } }"
+    },
+    {
+      "name": "Masthead Tab",
+      "kind": "button",
+      "refersTo": "tab",
+      "description": "The compact orange control at the right end of the masthead, visible at every width.",
+      "html": "<a class=\"ds-tab\" href=\"#\">Get in touch</a>",
+      "css": ".ds-tab { display: inline-flex; align-items: center; height: 40px; padding: 0 18px; background: var(--part, #ff5a1f); color: var(--on-part, #141414); font: 700 0.9375rem/1.55 var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); text-decoration: none; border-radius: 3px; transition: background-color 0.2s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-tab:hover { background: var(--part-left, #e84d14); } .ds-tab:focus-visible { outline: 2px solid var(--ink, #141414); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "The secondary action beside the primary button: ink, 600, always underlined.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">See the work</a>",
+      "css": ".ds-text-link { color: var(--ink, #141414); font: 600 1.0625rem/1.55 var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; } .ds-text-link:focus-visible { outline: 2px solid var(--ink, #141414); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "masthead",
+      "description": "Sticky 64px paper strip over a 2px ink rule: wordmark, contents links and the orange tab. The contents links hide at 900px and below.",
+      "html": "<header class=\"ds-masthead\"><div class=\"ds-masthead-row\"><a class=\"ds-wordmark\" href=\"#\">Rensel</a><nav aria-label=\"Sections\"><ul class=\"ds-contents\"><li><a href=\"#\">What I build</a></li><li><a href=\"#\">How it fits</a></li><li><a href=\"#\">Work</a></li></ul></nav><a class=\"ds-masthead-tab\" href=\"#\">Get in touch</a></div></header>",
+      "css": ".ds-masthead { background: var(--paper, #f4f4f1); color: var(--ink, #141414); border-bottom: 2px solid var(--ink, #141414); font-family: var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); } .ds-masthead-row { height: 64px; display: flex; align-items: center; gap: 32px; padding: 0 24px; } .ds-wordmark { margin-right: auto; color: inherit; font-size: 1.375rem; font-weight: 900; letter-spacing: -0.03em; text-decoration: none; } .ds-contents { display: flex; gap: 28px; margin: 0; padding: 0; list-style: none; font-size: 0.9375rem; font-weight: 600; } .ds-contents a { color: inherit; text-decoration: none; text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; } .ds-contents a:hover { text-decoration: underline; } .ds-masthead-tab { display: inline-flex; align-items: center; height: 40px; padding: 0 18px; background: var(--part, #ff5a1f); color: var(--on-part, #141414); font-size: 0.9375rem; font-weight: 700; text-decoration: none; border-radius: 3px; transition: background-color 0.2s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-masthead-tab:hover { background: var(--part-left, #e84d14); } .ds-masthead a:focus-visible { outline: 2px solid var(--ink, #141414); outline-offset: 3px; border-radius: 2px; } .ds-masthead .ds-masthead-tab:focus-visible { border-radius: 3px; } @media (max-width: 900px) { .ds-contents { display: none; } }"
+    },
+    {
+      "name": "Exploded Drawing with Legend",
+      "kind": "custom",
+      "refersTo": "part-tag",
+      "description": "The shipped cover drawing: 30° isometric parts out on dashed Construction Grey explosion lines with arrowheads, circled letters on leader lines, three face tones on the dot lattice, and a lettered legend.",
+      "html": "<figure class=\"ds-kit-figure\"><svg class=\"ds-kit ds-kit-cover\" viewBox=\"0 0 600 580\" role=\"img\" aria-labelledby=\"ds-kit-cover-title\"><title id=\"ds-kit-cover-title\">Exploded drawing of an AI system: your data (A), retrieval (B), a model (C), tools and MCP (D), on top of your systems (E).</title><defs><marker id=\"ds-cover-arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path class=\"ds-arrowhead\" d=\"M0,1 L10,5 L0,9 z\"/></marker><clipPath id=\"ds-cover-detail-clip\"><circle cx=\"520\" cy=\"210\" r=\"78\"/></clipPath></defs><g class=\"ds-part ds-part-e\" transform=\"translate(0.0 0.0)\"><polygon class=\"ds-f-top\" points=\"262.0,272.0 521.8,422.0 357.3,517.0 97.5,367.0\"/><polygon class=\"ds-f-right\" points=\"521.8,450.0 357.3,545.0 357.3,517.0 521.8,422.0\"/><polygon class=\"ds-f-left\" points=\"97.5,395.0 357.3,545.0 357.3,517.0 97.5,367.0\"/><polygon class=\"ds-port\" points=\"497.6,455.0 480.2,465.0 480.2,455.0 497.6,445.0\"/><polygon class=\"ds-port\" points=\"461.2,476.0 443.9,486.0 443.9,476.0 461.2,466.0\"/><polygon class=\"ds-port\" points=\"424.8,497.0 407.5,507.0 407.5,497.0 424.8,487.0\"/><polygon class=\"ds-port\" points=\"388.4,518.0 371.1,528.0 371.1,518.0 388.4,508.0\"/><polygon class=\"ds-port\" points=\"442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-port\" points=\"428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0\"/><line class=\"ds-detail\" x1=\"132.1\" y1=\"401.0\" x2=\"192.7\" y2=\"436.0\"/></g><line class=\"ds-explode ds-explode-b\" x1=\"145.1\" y1=\"240.5\" x2=\"223.0\" y2=\"349.5\" marker-end=\"url(#ds-cover-arrow)\"/><line class=\"ds-explode ds-explode-a\" x1=\"145.1\" y1=\"80.5\" x2=\"223.0\" y2=\"285.5\" marker-end=\"url(#ds-cover-arrow)\"/><g class=\"ds-part ds-part-b\" transform=\"translate(-77.9 -109.0)\"><polygon class=\"ds-f-top\" points=\"230.8,240.0 301.8,281.0 215.2,331.0 144.2,290.0\"/><polygon class=\"ds-f-right\" points=\"301.8,345.0 215.2,395.0 215.2,331.0 301.8,281.0\"/><polygon class=\"ds-f-left\" points=\"144.2,354.0 215.2,395.0 215.2,331.0 144.2,290.0\"/><polygon class=\"ds-inset\" points=\"152.9,347.0 206.6,378.0 206.6,336.0 152.9,305.0\"/><line class=\"ds-handle\" x1=\"170.2\" y1=\"329.0\" x2=\"189.3\" y2=\"340.0\"/><g class=\"ds-click\"><line x1=\"174.7\" y1=\"384.9\" x2=\"173.6\" y2=\"406.8\"/><line x1=\"172.4\" y1=\"384.1\" x2=\"159.1\" y2=\"401.6\"/><line x1=\"171.1\" y1=\"382.1\" x2=\"150.2\" y2=\"389.1\"/></g></g><g class=\"ds-part ds-part-a\" transform=\"translate(-77.9 -205.0)\"><polygon class=\"ds-f-top\" points=\"230.8,244.0 288.0,277.0 215.2,319.0 158.1,286.0\"/><polygon class=\"ds-f-right\" points=\"288.0,281.0 215.2,323.0 215.2,319.0 288.0,277.0\"/><polygon class=\"ds-f-left\" points=\"158.1,290.0 215.2,323.0 215.2,319.0 158.1,286.0\"/><polygon class=\"ds-f-top\" points=\"230.8,236.0 288.0,269.0 215.2,311.0 158.1,278.0\"/><polygon class=\"ds-f-right\" points=\"288.0,273.0 215.2,315.0 215.2,311.0 288.0,269.0\"/><polygon class=\"ds-f-left\" points=\"158.1,282.0 215.2,315.0 215.2,311.0 158.1,278.0\"/><polygon class=\"ds-f-top\" points=\"230.8,228.0 288.0,261.0 215.2,303.0 158.1,270.0\"/><polygon class=\"ds-f-right\" points=\"288.0,265.0 215.2,307.0 215.2,303.0 288.0,261.0\"/><polygon class=\"ds-f-left\" points=\"158.1,274.0 215.2,307.0 215.2,303.0 158.1,270.0\"/><line class=\"ds-detail\" x1=\"225.6\" y1=\"241.0\" x2=\"265.5\" y2=\"264.0\"/><line class=\"ds-detail\" x1=\"213.5\" y1=\"248.0\" x2=\"239.5\" y2=\"263.0\"/><line class=\"ds-detail\" x1=\"201.4\" y1=\"255.0\" x2=\"241.2\" y2=\"278.0\"/><line class=\"ds-detail\" x1=\"189.3\" y1=\"262.0\" x2=\"215.2\" y2=\"277.0\"/></g><line class=\"ds-explode ds-explode-c\" x1=\"331.3\" y1=\"257.0\" x2=\"331.3\" y2=\"397.0\" marker-end=\"url(#ds-cover-arrow)\"/><g class=\"ds-part ds-part-c\" transform=\"translate(0.0 -140.0)\"><polygon class=\"ds-f-top\" points=\"331.3,238.0 426.5,293.0 331.3,348.0 236.0,293.0\"/><polygon class=\"ds-f-right\" points=\"426.5,397.0 331.3,452.0 331.3,348.0 426.5,293.0\"/><polygon class=\"ds-f-left\" points=\"236.0,397.0 331.3,452.0 331.3,348.0 236.0,293.0\"/><polygon class=\"ds-f-top\" points=\"331.3,256.0 374.6,281.0 331.3,306.0 288.0,281.0\"/><polygon class=\"ds-f-right\" points=\"374.6,293.0 331.3,318.0 331.3,306.0 374.6,281.0\"/><polygon class=\"ds-f-left\" points=\"288.0,293.0 331.3,318.0 331.3,306.0 288.0,281.0\"/><polygon class=\"ds-inset\" points=\"411.0,376.0 346.9,413.0 346.9,359.0 411.0,322.0\"/><line class=\"ds-detail\" x1=\"402.3\" y1=\"339.0\" x2=\"359.0\" y2=\"364.0\"/><line class=\"ds-detail\" x1=\"402.3\" y1=\"351.0\" x2=\"369.4\" y2=\"370.0\"/><line class=\"ds-detail\" x1=\"402.3\" y1=\"363.0\" x2=\"364.2\" y2=\"385.0\"/><g class=\"ds-click\"><line x1=\"279.8\" y1=\"435.4\" x2=\"281.2\" y2=\"457.3\"/><line x1=\"277.5\" y1=\"434.8\" x2=\"266.2\" y2=\"453.7\"/><line x1=\"276.0\" y1=\"433.0\" x2=\"256.0\" y2=\"442.2\"/></g></g><line class=\"ds-explode ds-explode-d\" x1=\"554.7\" y1=\"391.0\" x2=\"442.1\" y2=\"446.0\" marker-end=\"url(#ds-cover-arrow)\"/><g class=\"ds-part ds-part-d\" transform=\"translate(112.6 -55.0)\"><g class=\"ds-pins\"><polygon class=\"ds-f-top\" points=\"442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-f-right\" points=\"449.1,460.0 442.1,464.0 442.1,450.0 449.1,446.0\"/><polygon class=\"ds-f-left\" points=\"435.2,460.0 442.1,464.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-f-top\" points=\"428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0\"/><polygon class=\"ds-f-right\" points=\"435.2,452.0 428.3,456.0 428.3,442.0 435.2,438.0\"/><polygon class=\"ds-f-left\" points=\"421.3,452.0 428.3,456.0 428.3,442.0 421.3,438.0\"/></g><polygon class=\"ds-f-top\" points=\"384.1,391.5 399.7,400.5 384.1,409.5 368.5,400.5\"/><polygon class=\"ds-f-right\" points=\"399.7,414.5 384.1,423.5 384.1,409.5 399.7,400.5\"/><polygon class=\"ds-f-left\" points=\"368.5,414.5 384.1,423.5 384.1,409.5 368.5,400.5\"/><polygon class=\"ds-f-top\" points=\"414.4,376.0 456.0,400.0 412.7,425.0 371.1,401.0\"/><polygon class=\"ds-f-right\" points=\"456.0,446.0 412.7,471.0 412.7,425.0 456.0,400.0\"/><polygon class=\"ds-f-left\" points=\"371.1,447.0 412.7,471.0 412.7,425.0 371.1,401.0\"/><polygon class=\"ds-port\" points=\"445.6,440.0 438.7,444.0 438.7,422.0 445.6,418.0\"/><polygon class=\"ds-port\" points=\"430.0,449.0 423.1,453.0 423.1,431.0 430.0,427.0\"/><g class=\"ds-click\"><line x1=\"467.0\" y1=\"449.3\" x2=\"488.9\" y2=\"446.8\"/><line x1=\"466.6\" y1=\"451.6\" x2=\"486.0\" y2=\"461.9\"/><line x1=\"464.9\" y1=\"453.3\" x2=\"475.1\" y2=\"472.8\"/></g></g><g class=\"ds-tag\"><line class=\"ds-leader\" x1=\"50\" y1=\"58\" x2=\"84\" y2=\"72\"/><circle cx=\"50\" cy=\"58\" r=\"15\"/><text x=\"50\" y=\"58\" dy=\"0.36em\" text-anchor=\"middle\">A</text></g><g class=\"ds-tag\"><line class=\"ds-leader\" x1=\"36\" y1=\"214\" x2=\"70\" y2=\"214\"/><circle cx=\"36\" cy=\"214\" r=\"15\"/><text x=\"36\" y=\"214\" dy=\"0.36em\" text-anchor=\"middle\">B</text></g><g class=\"ds-tag\"><line class=\"ds-leader\" x1=\"468\" y1=\"130\" x2=\"420\" y2=\"156\"/><circle cx=\"468\" cy=\"130\" r=\"15\"/><text x=\"468\" y=\"130\" dy=\"0.36em\" text-anchor=\"middle\">C</text></g><g class=\"ds-tag\"><line class=\"ds-leader\" x1=\"574\" y1=\"290\" x2=\"546\" y2=\"330\"/><circle cx=\"574\" cy=\"290\" r=\"15\"/><text x=\"574\" y=\"290\" dy=\"0.36em\" text-anchor=\"middle\">D</text></g><g class=\"ds-tag\"><line class=\"ds-leader\" x1=\"92\" y1=\"492\" x2=\"170\" y2=\"424\"/><circle cx=\"92\" cy=\"492\" r=\"15\"/><text x=\"92\" y=\"492\" dy=\"0.36em\" text-anchor=\"middle\">E</text></g></svg><figcaption><ol class=\"ds-legend\"><li><span class=\"ds-tag-inline\">A</span> Your data</li><li><span class=\"ds-tag-inline\">B</span> Retrieval</li><li><span class=\"ds-tag-inline\">C</span> Model</li><li><span class=\"ds-tag-inline\">D</span> Tools and MCP</li><li><span class=\"ds-tag-inline\">E</span> Your systems</li></ol></figcaption></figure>",
+      "css": ".ds-kit-figure { margin: 0; padding: 24px; color: var(--ink, #141414); font-family: var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); background-color: var(--paper, #f4f4f1); background-image: radial-gradient(circle, var(--rule, #cfcfc9) 1px, transparent 1.4px), radial-gradient(circle, var(--rule, #cfcfc9) 1px, transparent 1.4px); background-size: 34.64px 20px; background-position: 0 0, 17.32px 10px; }.ds-kit-figure .ds-kit { max-width: 560px; margin-inline: auto; } .ds-kit { display: block; width: 100%; height: auto; overflow: visible; } .ds-kit polygon, .ds-kit line { stroke: var(--ink, #141414); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; } .ds-kit .ds-f-top { fill: var(--paper, #f4f4f1); } .ds-kit .ds-f-left { fill: var(--face-left, #e7e7e3); } .ds-kit .ds-f-right { fill: var(--face-right, #d6d6d1); } .ds-kit .ds-inset { fill: none; } .ds-kit .ds-port { fill: var(--ink, #141414); } .ds-kit .ds-detail { stroke-width: 1.2; } .ds-kit .ds-handle { stroke-width: 3; } .ds-kit .ds-click { opacity: 0; } .ds-kit .ds-click line { stroke: var(--ink, #141414); stroke-width: 2.6; } .ds-kit .ds-explode { stroke: var(--line, #8c8c86); stroke-dasharray: 5 6; } .ds-arrowhead { fill: var(--line, #8c8c86); } .ds-tag circle { fill: var(--paper, #f4f4f1); stroke: var(--ink, #141414); stroke-width: 1.5; } .ds-tag text { font: 700 16px var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); fill: var(--ink, #141414); } .ds-kit .ds-tag .ds-leader { stroke-width: 1; } .ds-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 0.9375rem; font-weight: 500; line-height: 1.55; } .ds-tag-inline { display: inline-grid; place-items: center; width: 24px; height: 24px; margin-right: 4px; border: 1.5px solid var(--ink, #141414); border-radius: 50%; background: var(--paper, #f4f4f1); font-size: 0.75rem; font-weight: 700; }"
+    },
+    {
+      "name": "Parts Tray Item",
+      "kind": "custom",
+      "description": "One part laid loose on the lattice: an isometric drawing with 2-unit outlines whose leader line runs from an ink dot at its base to the title. No container.",
+      "html": "<div class=\"ds-tray\"><div class=\"ds-tray-item\"><svg class=\"ds-part-art\" viewBox=\"-65.1 -76.0 162.9 222.0\" aria-hidden=\"true\"><polygon class=\"ds-f-top\" points=\"0.0,-70.0 64.1,-33.0 0.0,4.0 -64.1,-33.0\"/><polygon class=\"ds-f-right\" points=\"64.1,37.0 0.0,74.0 0.0,4.0 64.1,-33.0\"/><polygon class=\"ds-f-left\" points=\"-64.1,37.0 0.0,74.0 0.0,4.0 -64.1,-33.0\"/><polygon class=\"ds-inset\" points=\"52.0,22.0 12.1,45.0 12.1,11.0 52.0,-12.0\"/><polygon class=\"ds-f-top\" points=\"39.8,13.0 52.0,20.0 38.1,28.0 26.0,21.0\"/><polygon class=\"ds-f-right\" points=\"52.0,32.0 38.1,40.0 38.1,28.0 52.0,20.0\"/><polygon class=\"ds-f-left\" points=\"26.0,33.0 38.1,40.0 38.1,28.0 26.0,21.0\"/><polygon class=\"ds-f-top\" points=\"62.4,4.0 91.8,21.0 57.2,41.0 27.7,24.0\"/><polygon class=\"ds-f-right\" points=\"91.8,55.0 57.2,75.0 57.2,41.0 91.8,21.0\"/><polygon class=\"ds-f-left\" points=\"27.7,58.0 57.2,75.0 57.2,41.0 27.7,24.0\"/><polygon class=\"ds-port\" points=\"84.9,51.0 79.7,54.0 79.7,36.0 84.9,33.0\"/><polygon class=\"ds-port\" points=\"71.0,59.0 65.8,62.0 65.8,44.0 71.0,41.0\"/><line class=\"ds-leader\" x1=\"57.2\" y1=\"75.0\" x2=\"-64.1\" y2=\"145.0\"/><circle class=\"ds-leader-dot\" cx=\"57.2\" cy=\"75.0\" r=\"3\"/></svg><h3>Agents and MCP servers</h3><p>Let Claude, ChatGPT or your own agent use your APIs and business systems.</p></div></div>",
+      "css": ".ds-tray { padding: 32px; color: var(--ink, #141414); font-family: var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); background-color: var(--paper, #f4f4f1); background-image: radial-gradient(circle, var(--rule, #cfcfc9) 1px, transparent 1.4px), radial-gradient(circle, var(--rule, #cfcfc9) 1px, transparent 1.4px); background-size: 34.64px 20px; background-position: 0 0, 17.32px 10px; } .ds-tray-item { display: grid; align-content: start; row-gap: 6px; max-width: 280px; } .ds-part-art { display: block; width: 100%; max-width: 220px; height: auto; overflow: visible; } .ds-part-art polygon, .ds-part-art line { stroke: var(--ink, #141414); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; } .ds-part-art .ds-f-top { fill: var(--paper, #f4f4f1); } .ds-part-art .ds-f-left { fill: var(--face-left, #e7e7e3); } .ds-part-art .ds-f-right { fill: var(--face-right, #d6d6d1); } .ds-part-art .ds-inset, .ds-part-art .ds-play { fill: none; } .ds-part-art .ds-port { fill: var(--ink, #141414); } .ds-part-art .ds-detail { stroke-width: 1.2; } .ds-part-art .ds-handle { stroke-width: 3; } .ds-part-art .ds-leader { stroke-width: 1.5; } .ds-part-art .ds-leader-dot { fill: var(--ink, #141414); } .ds-tray-item h3 { margin: 0; padding-top: 2px; font-size: 1.25rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.015em; text-wrap: balance; } .ds-tray-item p { margin: 0; max-width: 30ch; color: var(--ink-soft, #4a4a45); font-size: 1.0625rem; line-height: 1.55; text-wrap: pretty; }"
+    },
+    {
+      "name": "Assembly Sequence",
+      "kind": "custom",
+      "refersTo": "step-number-current",
+      "description": "The signature, frozen at step 4 as the build shows it: the current step's numeral in Part Orange, Right Face, part D seated in the orange face set with its click mark, and the detail circle on. Live, the steps drive the drawing as they scroll past.",
+      "html": "<div class=\"ds-assembly\"><ol class=\"ds-steps\"><li class=\"ds-step\"><span class=\"ds-step-number\" aria-hidden=\"true\">3</span><h3>Your data, indexed</h3><p>Index your documents, so answers come from your data.</p></li><li class=\"ds-step ds-step-current\"><span class=\"ds-step-number\" aria-hidden=\"true\">4</span><h3>Tools and MCP</h3><p>Connect tools and MCP servers, so it can look things up and act, with the permissions you set.</p></li><li class=\"ds-step\"><span class=\"ds-step-number\" aria-hidden=\"true\">5</span><h3>Shipped</h3><p>Put it where your users are: inside your product, or inside Claude and ChatGPT.</p></li></ol><div class=\"ds-assembly-figure\"><svg class=\"ds-kit ds-kit-assembly\" viewBox=\"0 0 600 580\" aria-hidden=\"true\"><defs><clipPath id=\"ds-assembly-detail-clip\"><circle cx=\"520\" cy=\"210\" r=\"78\"/></clipPath></defs><g class=\"ds-part ds-in ds-part-e\" style=\"--dx:0.0px;--dy:0.0px\"><polygon class=\"ds-f-top\" points=\"262.0,272.0 521.8,422.0 357.3,517.0 97.5,367.0\"/><polygon class=\"ds-f-right\" points=\"521.8,450.0 357.3,545.0 357.3,517.0 521.8,422.0\"/><polygon class=\"ds-f-left\" points=\"97.5,395.0 357.3,545.0 357.3,517.0 97.5,367.0\"/><polygon class=\"ds-port\" points=\"497.6,455.0 480.2,465.0 480.2,455.0 497.6,445.0\"/><polygon class=\"ds-port\" points=\"461.2,476.0 443.9,486.0 443.9,476.0 461.2,466.0\"/><polygon class=\"ds-port\" points=\"424.8,497.0 407.5,507.0 407.5,497.0 424.8,487.0\"/><polygon class=\"ds-port\" points=\"388.4,518.0 371.1,528.0 371.1,518.0 388.4,508.0\"/><polygon class=\"ds-port\" points=\"442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-port\" points=\"428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0\"/><line class=\"ds-detail\" x1=\"132.1\" y1=\"401.0\" x2=\"192.7\" y2=\"436.0\"/></g><g class=\"ds-part ds-in ds-part-b\" style=\"--dx:-77.9px;--dy:-109.0px\"><polygon class=\"ds-f-top\" points=\"230.8,240.0 301.8,281.0 215.2,331.0 144.2,290.0\"/><polygon class=\"ds-f-right\" points=\"301.8,345.0 215.2,395.0 215.2,331.0 301.8,281.0\"/><polygon class=\"ds-f-left\" points=\"144.2,354.0 215.2,395.0 215.2,331.0 144.2,290.0\"/><polygon class=\"ds-inset\" points=\"152.9,347.0 206.6,378.0 206.6,336.0 152.9,305.0\"/><line class=\"ds-handle\" x1=\"170.2\" y1=\"329.0\" x2=\"189.3\" y2=\"340.0\"/><g class=\"ds-click\"><line x1=\"174.7\" y1=\"384.9\" x2=\"173.6\" y2=\"406.8\"/><line x1=\"172.4\" y1=\"384.1\" x2=\"159.1\" y2=\"401.6\"/><line x1=\"171.1\" y1=\"382.1\" x2=\"150.2\" y2=\"389.1\"/></g></g><g class=\"ds-part ds-in ds-part-a\" style=\"--dx:-77.9px;--dy:-205.0px\"><polygon class=\"ds-f-top\" points=\"230.8,244.0 288.0,277.0 215.2,319.0 158.1,286.0\"/><polygon class=\"ds-f-right\" points=\"288.0,281.0 215.2,323.0 215.2,319.0 288.0,277.0\"/><polygon class=\"ds-f-left\" points=\"158.1,290.0 215.2,323.0 215.2,319.0 158.1,286.0\"/><polygon class=\"ds-f-top\" points=\"230.8,236.0 288.0,269.0 215.2,311.0 158.1,278.0\"/><polygon class=\"ds-f-right\" points=\"288.0,273.0 215.2,315.0 215.2,311.0 288.0,269.0\"/><polygon class=\"ds-f-left\" points=\"158.1,282.0 215.2,315.0 215.2,311.0 158.1,278.0\"/><polygon class=\"ds-f-top\" points=\"230.8,228.0 288.0,261.0 215.2,303.0 158.1,270.0\"/><polygon class=\"ds-f-right\" points=\"288.0,265.0 215.2,307.0 215.2,303.0 288.0,261.0\"/><polygon class=\"ds-f-left\" points=\"158.1,274.0 215.2,307.0 215.2,303.0 158.1,270.0\"/><line class=\"ds-detail\" x1=\"225.6\" y1=\"241.0\" x2=\"265.5\" y2=\"264.0\"/><line class=\"ds-detail\" x1=\"213.5\" y1=\"248.0\" x2=\"239.5\" y2=\"263.0\"/><line class=\"ds-detail\" x1=\"201.4\" y1=\"255.0\" x2=\"241.2\" y2=\"278.0\"/><line class=\"ds-detail\" x1=\"189.3\" y1=\"262.0\" x2=\"215.2\" y2=\"277.0\"/></g><g class=\"ds-part ds-in ds-part-c\" style=\"--dx:0.0px;--dy:-140.0px\"><polygon class=\"ds-f-top\" points=\"331.3,238.0 426.5,293.0 331.3,348.0 236.0,293.0\"/><polygon class=\"ds-f-right\" points=\"426.5,397.0 331.3,452.0 331.3,348.0 426.5,293.0\"/><polygon class=\"ds-f-left\" points=\"236.0,397.0 331.3,452.0 331.3,348.0 236.0,293.0\"/><polygon class=\"ds-f-top\" points=\"331.3,256.0 374.6,281.0 331.3,306.0 288.0,281.0\"/><polygon class=\"ds-f-right\" points=\"374.6,293.0 331.3,318.0 331.3,306.0 374.6,281.0\"/><polygon class=\"ds-f-left\" points=\"288.0,293.0 331.3,318.0 331.3,306.0 288.0,281.0\"/><polygon class=\"ds-inset\" points=\"411.0,376.0 346.9,413.0 346.9,359.0 411.0,322.0\"/><line class=\"ds-detail\" x1=\"402.3\" y1=\"339.0\" x2=\"359.0\" y2=\"364.0\"/><line class=\"ds-detail\" x1=\"402.3\" y1=\"351.0\" x2=\"369.4\" y2=\"370.0\"/><line class=\"ds-detail\" x1=\"402.3\" y1=\"363.0\" x2=\"364.2\" y2=\"385.0\"/><g class=\"ds-click\"><line x1=\"279.8\" y1=\"435.4\" x2=\"281.2\" y2=\"457.3\"/><line x1=\"277.5\" y1=\"434.8\" x2=\"266.2\" y2=\"453.7\"/><line x1=\"276.0\" y1=\"433.0\" x2=\"256.0\" y2=\"442.2\"/></g></g><g class=\"ds-part ds-in ds-new ds-part-d\" style=\"--dx:112.6px;--dy:-55.0px\"><g class=\"ds-pins\"><polygon class=\"ds-f-top\" points=\"442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-f-right\" points=\"449.1,460.0 442.1,464.0 442.1,450.0 449.1,446.0\"/><polygon class=\"ds-f-left\" points=\"435.2,460.0 442.1,464.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-f-top\" points=\"428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0\"/><polygon class=\"ds-f-right\" points=\"435.2,452.0 428.3,456.0 428.3,442.0 435.2,438.0\"/><polygon class=\"ds-f-left\" points=\"421.3,452.0 428.3,456.0 428.3,442.0 421.3,438.0\"/></g><polygon class=\"ds-f-top\" points=\"384.1,391.5 399.7,400.5 384.1,409.5 368.5,400.5\"/><polygon class=\"ds-f-right\" points=\"399.7,414.5 384.1,423.5 384.1,409.5 399.7,400.5\"/><polygon class=\"ds-f-left\" points=\"368.5,414.5 384.1,423.5 384.1,409.5 368.5,400.5\"/><polygon class=\"ds-f-top\" points=\"414.4,376.0 456.0,400.0 412.7,425.0 371.1,401.0\"/><polygon class=\"ds-f-right\" points=\"456.0,446.0 412.7,471.0 412.7,425.0 456.0,400.0\"/><polygon class=\"ds-f-left\" points=\"371.1,447.0 412.7,471.0 412.7,425.0 371.1,401.0\"/><polygon class=\"ds-port\" points=\"445.6,440.0 438.7,444.0 438.7,422.0 445.6,418.0\"/><polygon class=\"ds-port\" points=\"430.0,449.0 423.1,453.0 423.1,431.0 430.0,427.0\"/><g class=\"ds-click\"><line x1=\"467.0\" y1=\"449.3\" x2=\"488.9\" y2=\"446.8\"/><line x1=\"466.6\" y1=\"451.6\" x2=\"486.0\" y2=\"461.9\"/><line x1=\"464.9\" y1=\"453.3\" x2=\"475.1\" y2=\"472.8\"/></g></g><g class=\"ds-detail-view\"><line class=\"ds-leader\" x1=\"499.6\" y1=\"285.3\" x2=\"456.0\" y2=\"446.0\"/><circle class=\"ds-detail-bg\" cx=\"520\" cy=\"210\" r=\"78\"/><g clip-path=\"url(#ds-assembly-detail-clip)\"><g class=\"ds-zoom\" transform=\"translate(520 210) scale(2.2) translate(-438.7 -438.0)\"><polygon class=\"ds-f-top\" points=\"262.0,272.0 521.8,422.0 357.3,517.0 97.5,367.0\"/><polygon class=\"ds-f-right\" points=\"521.8,450.0 357.3,545.0 357.3,517.0 521.8,422.0\"/><polygon class=\"ds-f-left\" points=\"97.5,395.0 357.3,545.0 357.3,517.0 97.5,367.0\"/><polygon class=\"ds-port\" points=\"497.6,455.0 480.2,465.0 480.2,455.0 497.6,445.0\"/><polygon class=\"ds-port\" points=\"461.2,476.0 443.9,486.0 443.9,476.0 461.2,466.0\"/><polygon class=\"ds-port\" points=\"424.8,497.0 407.5,507.0 407.5,497.0 424.8,487.0\"/><polygon class=\"ds-port\" points=\"388.4,518.0 371.1,528.0 371.1,518.0 388.4,508.0\"/><polygon class=\"ds-port\" points=\"442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-port\" points=\"428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0\"/><line class=\"ds-detail\" x1=\"132.1\" y1=\"401.0\" x2=\"192.7\" y2=\"436.0\"/><g class=\"ds-zoom-d\"><polygon class=\"ds-f-top\" points=\"384.1,391.5 399.7,400.5 384.1,409.5 368.5,400.5\"/><polygon class=\"ds-f-right\" points=\"399.7,414.5 384.1,423.5 384.1,409.5 399.7,400.5\"/><polygon class=\"ds-f-left\" points=\"368.5,414.5 384.1,423.5 384.1,409.5 368.5,400.5\"/><polygon class=\"ds-f-top\" points=\"414.4,376.0 456.0,400.0 412.7,425.0 371.1,401.0\"/><polygon class=\"ds-f-right\" points=\"456.0,446.0 412.7,471.0 412.7,425.0 456.0,400.0\"/><polygon class=\"ds-f-left\" points=\"371.1,447.0 412.7,471.0 412.7,425.0 371.1,401.0\"/><polygon class=\"ds-port\" points=\"445.6,440.0 438.7,444.0 438.7,422.0 445.6,418.0\"/><polygon class=\"ds-port\" points=\"430.0,449.0 423.1,453.0 423.1,431.0 430.0,427.0\"/></g><polygon class=\"ds-hidden-line\" points=\"442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-hidden-line\" points=\"449.1,460.0 442.1,464.0 442.1,450.0 449.1,446.0\"/><polygon class=\"ds-hidden-line\" points=\"435.2,460.0 442.1,464.0 442.1,450.0 435.2,446.0\"/><polygon class=\"ds-hidden-line\" points=\"428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0\"/><polygon class=\"ds-hidden-line\" points=\"435.2,452.0 428.3,456.0 428.3,442.0 435.2,438.0\"/><polygon class=\"ds-hidden-line\" points=\"421.3,452.0 428.3,456.0 428.3,442.0 421.3,438.0\"/><g class=\"ds-click\"><line x1=\"460.6\" y1=\"447.2\" x2=\"468.6\" y2=\"446.3\"/><line x1=\"460.4\" y1=\"448.3\" x2=\"467.5\" y2=\"452.1\"/><line x1=\"459.6\" y1=\"449.2\" x2=\"463.3\" y2=\"456.3\"/></g></g></g><circle class=\"ds-detail-ring\" cx=\"520\" cy=\"210\" r=\"78\"/></g></svg></div></div>",
+      "css": ".ds-assembly { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 24px; align-items: center; padding: 24px; background: var(--paper, #f4f4f1); color: var(--ink, #141414); font-family: var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); } .ds-steps { display: grid; gap: 40px; margin: 0; padding: 0; list-style: none; } .ds-step { display: grid; grid-template-columns: auto 1fr; align-content: center; column-gap: 22px; } .ds-step-number { grid-row: span 2; font-size: clamp(4rem, 7vw, 6rem); font-weight: 900; line-height: 0.85; letter-spacing: -0.04em; color: var(--line, #8c8c86); font-variant-numeric: tabular-nums; transition: color 0.3s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-step-current .ds-step-number { color: var(--part-right, #c9410f); } .ds-step h3 { align-self: end; margin: 0; font-size: 1.5rem; font-weight: 800; line-height: 1.15; text-wrap: balance; } .ds-step p { margin: 8px 0 0; max-width: 34ch; color: var(--ink-soft, #4a4a45); font-size: 1.0625rem; line-height: 1.55; text-wrap: pretty; } .ds-assembly-figure { padding: 24px; background-color: var(--paper, #f4f4f1); background-image: radial-gradient(circle, var(--rule, #cfcfc9) 1px, transparent 1.4px), radial-gradient(circle, var(--rule, #cfcfc9) 1px, transparent 1.4px); background-size: 34.64px 20px; background-position: 0 0, 17.32px 10px; } .ds-kit { display: block; width: 100%; height: auto; overflow: visible; } .ds-kit polygon, .ds-kit line { stroke: var(--ink, #141414); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; } .ds-kit .ds-f-top { fill: var(--paper, #f4f4f1); } .ds-kit .ds-f-left { fill: var(--face-left, #e7e7e3); } .ds-kit .ds-f-right { fill: var(--face-right, #d6d6d1); } .ds-kit .ds-inset { fill: none; } .ds-kit .ds-port { fill: var(--ink, #141414); } .ds-kit .ds-detail { stroke-width: 1.2; } .ds-kit .ds-handle { stroke-width: 3; } .ds-kit .ds-click { opacity: 0; } .ds-kit .ds-click line { stroke: var(--ink, #141414); stroke-width: 2.6; } .ds-kit-assembly .ds-part { transform: translate(var(--dx), var(--dy)); transition: transform 0.9s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-kit-assembly .ds-part.ds-in { transform: translate(0, 0); } .ds-kit-assembly .ds-part polygon { transition: fill 0.3s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-kit-assembly .ds-part.ds-new .ds-f-top { fill: var(--part, #ff5a1f); } .ds-kit-assembly .ds-part.ds-new .ds-f-left { fill: var(--part-left, #e84d14); } .ds-kit-assembly .ds-part.ds-new .ds-f-right { fill: var(--part-right, #c9410f); } .ds-kit-assembly .ds-part.ds-new .ds-click { opacity: 1; transition: opacity 0s 0.75s; } .ds-kit-assembly .ds-part-d.ds-in .ds-pins { opacity: 0; transition: opacity 0s 0.85s; } .ds-detail-bg { fill: var(--paper, #f4f4f1); } .ds-kit .ds-detail-ring { fill: none; stroke: var(--ink, #141414); stroke-width: 2; } .ds-kit .ds-detail-view .ds-leader { stroke-width: 1; } .ds-kit .ds-zoom polygon, .ds-kit .ds-zoom line { vector-effect: non-scaling-stroke; } .ds-kit .ds-zoom .ds-click { opacity: 1; } .ds-kit-assembly .ds-part-d.ds-new ~ .ds-detail-view .ds-zoom-d .ds-f-top { fill: var(--part, #ff5a1f); } .ds-kit-assembly .ds-part-d.ds-new ~ .ds-detail-view .ds-zoom-d .ds-f-left { fill: var(--part-left, #e84d14); } .ds-kit-assembly .ds-part-d.ds-new ~ .ds-detail-view .ds-zoom-d .ds-f-right { fill: var(--part-right, #c9410f); } .ds-kit .ds-hidden-line { fill: none; stroke: var(--ink-soft, #4a4a45); stroke-width: 1.8; stroke-dasharray: 5 3; } @media (max-width: 900px) { .ds-assembly { grid-template-columns: minmax(0, 1fr); } .ds-assembly-figure { order: -1; } } @media (prefers-reduced-motion: reduce) { .ds-kit-assembly .ds-part, .ds-kit-assembly .ds-part polygon, .ds-kit-assembly .ds-part.ds-new .ds-click, .ds-step-number { transition: none; } }"
+    },
+    {
+      "name": "Fact Strip",
+      "kind": "custom",
+      "refersTo": "fact-strip",
+      "description": "A full-bleed ink band of short facts in paper text, separated by 4px Construction Grey dots.",
+      "html": "<ul class=\"ds-strip\"><li>AI engineer at Tripletex</li><li>Shipping production software since 2018</li><li>Oslo, Norway</li><li>English and Norwegian</li></ul>",
+      "css": ".ds-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 0; margin: 0; padding: 14px 24px; list-style: none; background: var(--ink, #141414); color: var(--paper, #f4f4f1); font: 500 0.875rem/1.55 var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); } .ds-strip li + li::before { content: \"\"; display: inline-block; width: 4px; height: 4px; margin: 0 16px; border-radius: 50%; background: var(--line, #8c8c86); vertical-align: middle; }"
+    },
+    {
+      "name": "Spec Table",
+      "kind": "custom",
+      "refersTo": "spec-head",
+      "description": "The work, ruled and never boxed: a 2px ink rule under the column heads, 1px Lattice Grey hairlines between rows, tabular years in Soft Ink.",
+      "html": "<table class=\"ds-spec\"><thead><tr><th scope=\"col\">Year</th><th scope=\"col\">Project</th><th scope=\"col\">What</th><th scope=\"col\">Built with</th></tr></thead><tbody><tr><td>2026</td><th scope=\"row\"><a href=\"#\">trmnl-api-mcp</a></th><td>MCP server for the TRMNL API: eight tools to read devices and manage playlists, with strict input checks and tests.</td><td>MCP TypeScript SDK, Node.js</td></tr><tr><td>2018–2024</td><th scope=\"row\">Upstacked, via Bluetree</th><td>Full-stack, DevOps and data science for an operations SaaS, including anomaly detection for cybersecurity.</td><td>React, Python, Django, Spark, Kubernetes, GCP</td></tr></tbody><tbody><tr class=\"ds-spec-group\"><th colspan=\"4\" scope=\"rowgroup\">Education</th></tr><tr><td>2017–2019</td><th scope=\"row\">University of South-Eastern Norway</th><td>MSc in Systems Engineering with Embedded Systems.</td><td></td></tr></tbody></table>",
+      "css": ".ds-spec { width: 100%; border-collapse: collapse; background: var(--paper, #f4f4f1); color: var(--ink, #141414); font: 400 0.9375rem/1.55 var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); } .ds-spec th, .ds-spec td { padding: 14px 20px 14px 0; border-bottom: 1px solid var(--rule, #cfcfc9); text-align: left; vertical-align: top; } .ds-spec thead th { padding-bottom: 10px; border-bottom: 2px solid var(--ink, #141414); font-size: 0.8125rem; font-weight: 700; } .ds-spec tbody th { font-weight: 700; } .ds-spec tbody th a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; } .ds-spec td:first-child { width: 7.5rem; white-space: nowrap; color: var(--ink-soft, #4a4a45); font-variant-numeric: tabular-nums; } .ds-spec td:last-child { color: var(--ink-soft, #4a4a45); } .ds-spec .ds-spec-group th { padding-top: 40px; border-bottom: 2px solid var(--ink, #141414); font-size: 0.8125rem; } .ds-spec a:focus-visible { outline: 2px solid var(--ink, #141414); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Helpline",
+      "kind": "custom",
+      "refersTo": "helpline",
+      "description": "The place to act at section scale: a full-bleed Part Orange band with the email at headline size. Text, focus rings and selection invert to ink.",
+      "html": "<section class=\"ds-helpline\"><h2>Need an AI engineer?</h2><a class=\"ds-helpline-email\" href=\"#\">trond@rensel.dev</a><p>Tell me what you want to build. I'm based in Oslo and work in English and Norwegian.</p><ul class=\"ds-helpline-links\"><li><a href=\"#\">LinkedIn</a></li><li><a href=\"#\">GitHub</a></li></ul></section>",
+      "css": ".ds-helpline { padding: 72px 24px; background: var(--part, #ff5a1f); color: var(--on-part, #141414); font: 400 1.0625rem/1.55 var(--font, \"Schibsted Grotesk\", \"Helvetica Neue\", Arial, sans-serif); } .ds-helpline h2 { margin: 0; font-size: clamp(2rem, 4.2vw, 3.5rem); font-weight: 800; line-height: 1; letter-spacing: -0.03em; text-wrap: balance; } .ds-helpline-email { display: inline-block; margin-top: 28px; color: inherit; font-size: clamp(1.75rem, 5vw, 4rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 0.14em; overflow-wrap: anywhere; } .ds-helpline p { margin: 24px 0 0; max-width: 44ch; font-size: 1.125rem; } .ds-helpline-links { display: flex; gap: 28px; margin: 24px 0 0; padding: 0; list-style: none; font-weight: 700; } .ds-helpline-links a { color: inherit; text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; } .ds-helpline ::selection { background: var(--on-part, #141414); color: var(--part, #ff5a1f); } .ds-helpline a:focus-visible { outline: 2px solid var(--on-part, #141414); outline-offset: 3px; border-radius: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Assembly Manual",
+    "overview": "The site is printed like the manual in a flat-pack box: uncoated paper, one black ink and a single process orange. Anything that explains is drawn as 30° isometric line art, with circled part letters, dashed explosion lines, a detail circle and click marks. Anything that reads is set in one Norwegian grotesk, blunt at 900 and plain at 400. Orange appears only where something is happening: on the part going in, and at the place to act.\n\nThe system is flat and literal. There are no cards, boxes, shadows or visible gradients. Only the manual's own devices frame content: 2px ink rules, circled letters on leader lines, the detail circle and the ink fact strip. Depth exists only inside the drawings, where every solid has three face tones. Explanation gets air and proof gets packed: drawings sit alone on the dot lattice, while facts run in a dense ink strip and the work is listed in a ruled spec table. Motion is mechanical. A part slides along its explosion line on an exponential ease-out and lands with a click mark that switches on in a single frame.\n\nThe page stays on paper in every OS theme; the dark theme was removed in review and is not part of the world. The system refuses the developer-portfolio defaults (a dark hero, skill-icon grids, equal project cards) and, as a brand commitment, AI-hype imagery: glowing gradients, robots, neural-network visuals.",
+    "keyCharacteristics": [
+      "Manual Paper and one Manual Ink; the page never goes dark.",
+      "Part Orange only on the part being added and the place to act.",
+      "30° isometric line drawings with three face tones, circled part letters, dashed explosion lines, a detail circle and click marks.",
+      "One family, Schibsted Grotesk 400–900, ranked by weight, with heavy tabular numerals.",
+      "Flat: no cards, boxes, shadows or visible gradients.",
+      "Mechanical motion: slide along the explosion line, then click."
+    ],
+    "rules": [
+      {
+        "name": "The Two Places Rule",
+        "body": "Part Orange marks exactly two things: the part being added, and the place to act. Links, headings, icons, rules and decoration are never orange; text selection borrows it as a highlight.",
+        "section": "colors"
+      },
+      {
+        "name": "The Current Part Rule",
+        "body": "In a step sequence, the current step's numeral turns from Construction Grey to Part Orange, Right Face: the shaded tone of the part going into the drawing, at 4.5:1 on paper. Part Orange itself never sets text on paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Edition Rule",
+        "body": "There is one edition, printed on paper. No dark theme and no dark-mode variant; the fact strip is the only band printed on an ink ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight Ladder Rule",
+        "body": "One family, ranked by weight: 900 for display, numerals and the wordmark; 800 for headings and titles; 700 for actions, tags and table heads; 600 for navigation; 400 and 500 for reading. No second face, no uppercase, no tracked-out labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Heavy Numeral Rule",
+        "body": "Sequence numbers are huge, black-weight, tightly tracked and tabular. They show state by colour alone, never by size.",
+        "section": "typography"
+      },
+      {
+        "name": "The Five-and-Seven Rule",
+        "body": "Where words and a drawing share a row, the words take five columns and the drawing takes seven.",
+        "section": "layout"
+      },
+      {
+        "name": "The Drawing Board Rule",
+        "body": "The lattice belongs to drawings. It appears only behind surfaces that carry them, and it never sets out the blocks.",
+        "section": "layout"
+      },
+      {
+        "name": "The Three-Face Rule",
+        "body": "Every solid is drawn in three tones with light from the upper left: the top face is Manual Paper, the left face Left Face, the right face Right Face. The part being added swaps all three for Part Orange and its two shade faces; nothing else about it changes.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Cast-Shadow Rule",
+        "body": "Nothing casts a shadow: not the controls, not the photograph, not the drawings. Depth comes from face tone and ink outline only.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Manual Devices Rule",
+        "body": "Only the manual's own devices frame content: ink rules, circled letters on leader lines, the detail circle and the ink fact strip. No cards, boxes, outlined panels or pills.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Slide-and-Click Rule",
+        "body": "Parts move one way only: along their own explosion line, into their seat, on the exponential ease-out. Marks of state switch on in a single frame once the slide lands, and nothing fades in from invisible.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do keep the page on Manual Paper (#f4f4f1) and print everything that states something in Manual Ink (#141414).",
+      "Do keep Part Orange (#ff5a1f) for the part being added and the place to act, with ink text and ink focus rings on it.",
+      "Do draw every illustration as 30° isometric line art: ink outlines (1.6 drawing units in assemblies, 2 for single parts), three face tones lit from the upper left, round joins, and circled letters on leader lines.",
+      "Do frame content only with the manual's devices: 2px ink rules, circled part letters, the detail circle and the ink fact strip.",
+      "Do rank type by Schibsted Grotesk's weights (900 display and numerals, 800 headings, 700 actions, 400 reading) and stay in the one family.",
+      "Do move parts by sliding them along their dashed explosion lines on cubic-bezier(0.16, 1, 0.3, 1), and switch marks of state on in a single frame once the slide lands.",
+      "Do show every state without movement under reduced motion, and show the finished assembly when JavaScript is off.",
+      "Do print photographs in ink on orange (grayscale, 1.1 contrast, multiply), and let only the film play in full colour."
+    ],
+    "donts": [
+      "Don't add cards, boxes, outlined panels, drop shadows or visible gradients such as glows and colour ramps. The lattice's hard-stop dots are a pattern, not a gradient.",
+      "Don't ship a dark theme or a dark-mode variant; the page stays on paper in every OS theme.",
+      "Don't use Part Orange for decoration, links, headings or icons, or for any text on paper (2.8:1); text that marks the current part takes Part Orange, Right Face.",
+      "Don't set Construction Grey (#8c8c86) text below display size; it measures 3.1:1 on paper.",
+      "Don't use AI-hype imagery: glowing gradients, robots, neural-network visuals.",
+      "Don't put kickers or eyebrow labels over headings, set labels in uppercase or tracked caps, or add a second typeface.",
+      "Don't fade elements in from invisible or let them overshoot; state changes slide or switch.",
+      "Don't use glyph characters or icon fonts as icons; the manual's marks (arrow, click, tick) are drawn strokes in inline SVG.",
+      "Don't round corners past 6px or use pills; circles are kept for the manual's marks."
+    ]
+  }
+}

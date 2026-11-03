@@ -1,0 +1,987 @@
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url("assets/fonts/schibsted-grotesk-latin.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --paper: #f4f4f1;
+  --ink: #141414;
+  --ink-soft: #4a4a45;
+  --line: #8c8c86;
+  --rule: #cfcfc9;
+  --face-left: #e7e7e3;
+  --face-right: #d6d6d1;
+  --part: #ff5a1f;
+  --part-left: #e84d14;
+  --part-right: #c9410f;
+  --on-part: #141414;
+  --font: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --gutter: clamp(16px, 4vw, 48px);
+  --header: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header) + 16px);
+  scrollbar-color: var(--line) var(--paper);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.55 var(--font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--part);
+  color: var(--on-part);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+h3 {
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(2rem, 4.2vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.wrap {
+  width: min(100% - 2 * var(--gutter), 1320px);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  z-index: 20;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+.cover,
+.build,
+.assembly-figure {
+  background-image: radial-gradient(circle, var(--rule) 1px, transparent 1.4px),
+    radial-gradient(circle, var(--rule) 1px, transparent 1.4px);
+  background-size: 34.64px 20px;
+  background-position: 0 0, 17.32px 10px;
+}
+
+/* Masthead: the manual's top strip, with the helpline tab */
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+
+.masthead-row {
+  height: var(--header);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.wordmark {
+  margin-right: auto;
+  font-size: 1.375rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.contents {
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.contents a {
+  text-decoration: none;
+}
+
+.contents a:hover {
+  text-decoration: underline;
+}
+
+.tab,
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--part);
+  color: var(--on-part);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.2s var(--ease);
+}
+
+.tab {
+  height: 40px;
+  padding: 0 18px;
+  font-size: 0.9375rem;
+}
+
+.button {
+  padding: 16px 22px;
+  font-size: 1.0625rem;
+}
+
+.tab:hover,
+.button:hover {
+  background: var(--part-left);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.35s var(--ease);
+}
+
+.button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Cover */
+
+.cover {
+  min-height: calc(100svh - var(--header));
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+  padding-block: clamp(32px, 6vh, 72px) clamp(24px, 4vh, 48px);
+}
+
+.cover-copy {
+  grid-column: 1 / span 5;
+}
+
+.cover-figure {
+  grid-column: 6 / -1;
+}
+
+.cover-figure .kit {
+  width: auto;
+  max-height: max(360px, calc(100svh - var(--header) - 230px));
+  margin-inline: auto;
+}
+
+h1 {
+  display: grid;
+  gap: 12px;
+}
+
+.cover-name {
+  font-size: clamp(1.375rem, 2.2vw, 1.875rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.cover-role {
+  font-size: clamp(3.25rem, 6.6vw, 6rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.cover-promise {
+  margin-top: 28px;
+  max-width: 30ch;
+  text-wrap: pretty;
+  font-size: clamp(1.125rem, 1.5vw, 1.3125rem);
+  line-height: 1.45;
+}
+
+.cover-actions {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+}
+
+.text-link {
+  font-weight: 600;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.tag-inline {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  background: var(--paper);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 0;
+  margin: 0;
+  padding: 14px var(--gutter);
+  list-style: none;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.strip li + li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 16px;
+  border-radius: 50%;
+  background: var(--line);
+  vertical-align: middle;
+}
+
+/* Below the width where all six facts fit on one line, they become a ruled grid. */
+@media (max-width: 1359px) {
+  .strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    padding: 0;
+    background: var(--ink-soft);
+  }
+
+  .strip li {
+    padding: 10px 16px;
+    background: var(--ink);
+    text-align: center;
+  }
+
+  .strip li + li::before {
+    content: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .strip li {
+    text-align: left;
+  }
+}
+
+/* The drawings */
+
+.kit,
+.part-art {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.kit polygon,
+.kit line,
+.part-art polygon,
+.part-art line {
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.part-art polygon,
+.part-art line {
+  stroke-width: 2;
+}
+
+.f-top {
+  fill: var(--paper);
+}
+
+.f-left {
+  fill: var(--face-left);
+}
+
+.f-right {
+  fill: var(--face-right);
+}
+
+.inset,
+.play {
+  fill: none;
+}
+
+.port {
+  fill: var(--ink);
+}
+
+.kit .detail,
+.part-art .detail {
+  stroke-width: 1.2;
+}
+
+.kit .handle,
+.part-art .handle {
+  stroke-width: 3;
+}
+
+.kit .explode {
+  stroke: var(--line);
+  stroke-dasharray: 5 6;
+}
+
+.arrowhead {
+  fill: var(--line);
+}
+
+.kit .click {
+  opacity: 0;
+}
+
+.kit .click line {
+  stroke: var(--ink);
+  stroke-width: 2.6;
+}
+
+.detail-bg {
+  fill: var(--paper);
+}
+
+.kit .detail-ring {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.kit .detail-view .leader {
+  stroke-width: 1;
+}
+
+.kit .zoom polygon,
+.kit .zoom line {
+  vector-effect: non-scaling-stroke;
+}
+
+.kit .zoom .click {
+  opacity: 1;
+}
+
+.kit-assembly .part-d.new ~ .detail-view .zoom-d .f-top {
+  fill: var(--part);
+}
+
+.kit-assembly .part-d.new ~ .detail-view .zoom-d .f-left {
+  fill: var(--part-left);
+}
+
+.kit-assembly .part-d.new ~ .detail-view .zoom-d .f-right {
+  fill: var(--part-right);
+}
+
+.kit .hidden-line {
+  fill: none;
+  stroke: var(--ink-soft);
+  stroke-width: 1.8;
+  stroke-dasharray: 5 3;
+}
+
+.kit-assembly .part-d.in .pins {
+  opacity: 0;
+  transition: opacity 0s 0.85s;
+}
+
+.done-mark circle {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 2.4;
+}
+
+.done-mark path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tag circle {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.tag text {
+  font: 700 16px var(--font);
+  fill: var(--ink);
+}
+
+.kit .tag .leader {
+  stroke-width: 1;
+}
+
+.kit-assembly .part {
+  transform: translate(var(--dx), var(--dy));
+  transition: transform 0.9s var(--ease);
+}
+
+.kit-assembly .part.in {
+  transform: translate(0, 0);
+}
+
+.kit-assembly .part polygon {
+  transition: fill 0.3s var(--ease);
+}
+
+.kit-assembly .part.new .f-top {
+  fill: var(--part);
+}
+
+.kit-assembly .part.new .f-left {
+  fill: var(--part-left);
+}
+
+.kit-assembly .part.new .f-right {
+  fill: var(--part-right);
+}
+
+.kit-assembly .part.new .click {
+  opacity: 1;
+  transition: opacity 0s 0.75s;
+}
+
+.kit-assembly.is-live .detail-view,
+.kit-assembly.is-live .done-mark {
+  opacity: 0;
+}
+
+.kit-assembly.is-live .on {
+  opacity: 1;
+  transition: opacity 0s 0.75s;
+}
+
+.kit-assembly .explode.in {
+  opacity: 0;
+}
+
+/* What I build: the parts inventory, laid out loose on the lattice */
+
+.build {
+  padding-block: clamp(72px, 12vh, 140px);
+}
+
+.inventory {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px 40px;
+  margin: 56px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inventory li {
+  display: grid;
+  align-content: start;
+  row-gap: 6px;
+}
+
+.inventory li:nth-child(even) {
+  margin-top: 72px;
+}
+
+.inventory .part-art {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.part-art .leader {
+  stroke-width: 1.5;
+}
+
+.part-art .leader-dot {
+  fill: var(--ink);
+}
+
+.inventory h3 {
+  padding-top: 2px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.inventory p {
+  max-width: 30ch;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+/* How it fits together: the assembly sequence */
+
+.assembly {
+  padding-top: clamp(56px, 10vh, 120px);
+  border-top: 2px solid var(--ink);
+}
+
+.assembly-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0 24px;
+}
+
+.assembly-grid h2 {
+  grid-column: 1 / -1;
+}
+
+.assembly-figure {
+  grid-column: 6 / -1;
+  grid-row: 2;
+  align-self: start;
+  position: sticky;
+  top: calc(var(--header) + 24px);
+  height: calc(100svh - var(--header) - 48px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.assembly-figure .kit {
+  max-height: 100%;
+  width: auto;
+}
+
+.steps {
+  grid-column: 1 / span 5;
+  grid-row: 2;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  min-height: 72svh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: center;
+  column-gap: 22px;
+}
+
+.step-number {
+  grid-row: span 2;
+  font-size: clamp(4rem, 7vw, 6rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  color: var(--line);
+  font-variant-numeric: tabular-nums;
+  transition: color 0.3s var(--ease);
+}
+
+.step.is-current .step-number {
+  color: var(--part-right);
+}
+
+.step h3 {
+  align-self: end;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.step p {
+  margin-top: 8px;
+  max-width: 34ch;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+/* Work: the film and the spec table */
+
+.work {
+  padding-block: clamp(72px, 12vh, 140px);
+  border-top: 2px solid var(--ink);
+}
+
+.film {
+  margin-top: 40px;
+}
+
+.film video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  background: #0b0c1d;
+}
+
+.film figcaption {
+  margin-top: 14px;
+  max-width: 70ch;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+.film figcaption strong {
+  color: var(--ink);
+}
+
+.film figcaption a {
+  margin-left: 6px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.spec {
+  width: 100%;
+  margin-top: 64px;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.spec th,
+.spec td {
+  padding: 14px 20px 14px 0;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+.spec thead th {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.spec tbody th {
+  font-weight: 700;
+}
+
+.spec tbody th a {
+  text-decoration-thickness: 1px;
+}
+
+.spec td:first-child {
+  width: 7.5rem;
+  white-space: nowrap;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.spec td:last-child {
+  color: var(--ink-soft);
+}
+
+.spec .spec-group th {
+  padding-top: 40px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 0.8125rem;
+}
+
+/* Contact: the helpline page */
+
+.helpline {
+  padding-block: clamp(72px, 12vh, 140px);
+  background: var(--part);
+  color: var(--on-part);
+}
+
+.helpline ::selection {
+  background: var(--on-part);
+  color: var(--part);
+}
+
+.helpline :focus-visible {
+  outline-color: var(--on-part);
+}
+
+.helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 40px 24px;
+  align-items: end;
+}
+
+.helpline-copy {
+  grid-column: 1 / span 7;
+}
+
+.helpline-email {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: clamp(1.75rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.14em;
+  overflow-wrap: anywhere;
+}
+
+.helpline p {
+  margin-top: 24px;
+  max-width: 44ch;
+  font-size: 1.125rem;
+}
+
+.helpline-links {
+  display: flex;
+  gap: 28px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+}
+
+.portrait {
+  grid-column: 9 / -1;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  filter: grayscale(1) contrast(1.1);
+  mix-blend-mode: multiply;
+}
+
+/* Colophon */
+
+.colophon {
+  padding-block: 28px;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+.colophon-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+}
+
+.colophon-row p {
+  margin-right: auto;
+}
+
+/* Smaller screens */
+
+@media (max-width: 1080px) {
+  .inventory {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inventory li:nth-child(even) {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contents {
+    display: none;
+  }
+
+  .cover-copy,
+  .cover-figure {
+    grid-column: 1 / -1;
+  }
+
+  .cover-figure {
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .assembly-figure {
+    grid-column: 1 / -1;
+    top: var(--header);
+    z-index: 2;
+    height: 44svh;
+    padding: 12px 0;
+    background-color: var(--paper);
+    border-bottom: 1.5px solid var(--rule);
+  }
+
+  .steps {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .step {
+    min-height: 32svh;
+  }
+
+  .helpline-copy,
+  .portrait {
+    grid-column: 1 / -1;
+  }
+
+  .portrait {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .inventory {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .inventory li:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .inventory .part-art {
+    max-width: 170px;
+  }
+
+  .spec thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .spec tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .spec th,
+  .spec td {
+    padding: 0;
+    border: 0;
+  }
+
+  .spec td:first-child {
+    width: auto;
+  }
+
+  .spec td:empty {
+    display: none;
+  }
+
+  .spec .spec-group {
+    padding-top: 32px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .spec .spec-group th {
+    padding: 0 0 8px;
+    border: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .kit-assembly .part,
+  .kit-assembly .part polygon,
+  .kit-assembly .part.new .click,
+  .kit-assembly.is-live .on,
+  .button svg,
+  .step-number {
+    transition: none;
+  }
+}

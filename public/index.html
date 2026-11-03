@@ -3,71 +3,339 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trond Rensel · AI engineer in Oslo</title>
+    <meta
+      name="description"
+      content="Trond Rensel is an AI engineer in Oslo. He builds AI assistants, RAG search, agents and MCP integrations that work inside real software."
+    />
+    <link rel="canonical" href="https://rensel.dev/" />
+    <meta name="theme-color" content="#f4f4f1" />
 
-    <!-- Edit meta tags for SEO -->
-    <title>Rensel | Portfolio</title>
-    <meta name="title" content="Rensel | Software Developer Portfolio">
-    <meta name="description" content="Professional portfolio for Rensel, showcasing skills, projects, and experience as a software developer">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rensel.dev/" />
+    <meta property="og:site_name" content="Trond Rensel" />
+    <meta property="og:title" content="Trond Rensel · AI engineer in Oslo" />
+    <meta
+      property="og:description"
+      content="AI assistants, RAG search, agents and MCP integrations that work inside your own systems."
+    />
+    <meta property="og:image" content="https://rensel.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Trond Rensel, AI engineer, over an exploded line drawing of an AI system."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://renzel.github.io/portfolio_new/">
-    <meta property="og:title" content="Rensel | Software Developer Portfolio">
-    <meta property="og:description" content="Professional portfolio for Rensel, showcasing skills, projects, and experience as a software developer">
-    <!-- Link to a hosted image -->
-    <!-- <meta property="og:image" content=""> -->
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://renzel.github.io/portfolio_new/">
-    <meta property="twitter:title" content="Rensel | Software Developer Portfolio">
-    <meta property="twitter:description" content="Professional portfolio for Rensel, showcasing skills, projects, and experience as a software developer">
-    <!-- Link to a hosted image -->
-    <!-- <meta property="twitter:image" content=""> -->
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
 
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="theme-color" content="#6c63ff" />
+    <link
+      rel="preload"
+      href="assets/fonts/schibsted-grotesk-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
 
-    <!-- Customize icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v8=qAJ44G5Bm7">
-    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v8=qAJ44G5Bm7" color="#885bd5">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v8=qAJ44G5Bm7">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v8=qAJ44G5Bm7">
-	  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
-    <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css">
-
-
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Trond Rensel",
+        "jobTitle": "AI engineer",
+        "url": "https://rensel.dev/",
+        "email": "mailto:trond@rensel.dev",
+        "image": "https://rensel.dev/assets/trond-rensel-800.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Oslo",
+          "addressCountry": "NO"
+        },
+        "worksFor": {"@type": "Organization", "name": "Tripletex"},
+        "knowsAbout": [
+          "AI engineering",
+          "Retrieval-augmented generation",
+          "AI agents",
+          "Model Context Protocol",
+          "Full-stack development"
+        ],
+        "sameAs": [
+          "https://github.com/renzel",
+          "https://www.linkedin.com/in/trond-rensel-618232137/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <a class="skip" href="#main">Skip to content</a>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <header class="masthead">
+      <div class="wrap masthead-row">
+        <a class="wordmark" href="#top" aria-label="Rensel, back to the top">Rensel</a>
+        <nav aria-label="Sections">
+          <ul class="contents">
+            <li><a href="#build">What I build</a></li>
+            <li><a href="#assembly">How it fits</a></li>
+            <li><a href="#work">Work</a></li>
+          </ul>
+        </nav>
+        <a class="tab" href="#contact">Get in touch</a>
+      </div>
+    </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <main id="main">
+      <section class="cover" id="top" aria-labelledby="cover-title">
+        <div class="wrap cover-grid">
+          <div class="cover-copy">
+            <h1 id="cover-title">
+              <span class="cover-name">Trond Rensel</span>
+              <span class="cover-role">AI engineer</span>
+            </h1>
+            <p class="cover-promise">
+              I build AI assistants, agents and integrations that work inside your own systems.
+            </p>
+            <div class="cover-actions">
+              <a class="button" href="mailto:trond@rensel.dev?subject=Project">
+                Start a project
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 4.5 16.5 10 11 15.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="text-link" href="#work">See the work</a>
+            </div>
+          </div>
+          <figure class="cover-figure">
+            <svg class="kit kit-cover" viewBox="0 0 600 580" role="img" aria-labelledby="kit-cover-title"><title id="kit-cover-title">Exploded drawing of an AI system: your data (A), retrieval (B), a model (C), tools and MCP (D), on top of your systems (E).</title><defs><marker id="cover-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrowhead" d="M0,1 L10,5 L0,9 z"/></marker><clipPath id="cover-detail-clip"><circle cx="520" cy="210" r="78"/></clipPath></defs><g class="part part-e" transform="translate(0.0 0.0)"><polygon class="f-top" points="262.0,272.0 521.8,422.0 357.3,517.0 97.5,367.0"/><polygon class="f-right" points="521.8,450.0 357.3,545.0 357.3,517.0 521.8,422.0"/><polygon class="f-left" points="97.5,395.0 357.3,545.0 357.3,517.0 97.5,367.0"/><polygon class="port" points="497.6,455.0 480.2,465.0 480.2,455.0 497.6,445.0"/><polygon class="port" points="461.2,476.0 443.9,486.0 443.9,476.0 461.2,466.0"/><polygon class="port" points="424.8,497.0 407.5,507.0 407.5,497.0 424.8,487.0"/><polygon class="port" points="388.4,518.0 371.1,528.0 371.1,518.0 388.4,508.0"/><polygon class="port" points="442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0"/><polygon class="port" points="428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0"/><line class="detail" x1="132.1" y1="401.0" x2="192.7" y2="436.0"/></g><line class="explode explode-b" data-part="b" x1="145.1" y1="240.5" x2="223.0" y2="349.5" marker-end="url(#cover-arrow)"/><line class="explode explode-a" data-part="a" x1="145.1" y1="80.5" x2="223.0" y2="285.5" marker-end="url(#cover-arrow)"/><g class="part part-b" transform="translate(-77.9 -109.0)"><polygon class="f-top" points="230.8,240.0 301.8,281.0 215.2,331.0 144.2,290.0"/><polygon class="f-right" points="301.8,345.0 215.2,395.0 215.2,331.0 301.8,281.0"/><polygon class="f-left" points="144.2,354.0 215.2,395.0 215.2,331.0 144.2,290.0"/><polygon class="inset" points="152.9,347.0 206.6,378.0 206.6,336.0 152.9,305.0"/><line class="handle" x1="170.2" y1="329.0" x2="189.3" y2="340.0"/><g class="click"><line x1="174.7" y1="384.9" x2="173.6" y2="406.8"/><line x1="172.4" y1="384.1" x2="159.1" y2="401.6"/><line x1="171.1" y1="382.1" x2="150.2" y2="389.1"/></g></g><g class="part part-a" transform="translate(-77.9 -205.0)"><polygon class="f-top" points="230.8,244.0 288.0,277.0 215.2,319.0 158.1,286.0"/><polygon class="f-right" points="288.0,281.0 215.2,323.0 215.2,319.0 288.0,277.0"/><polygon class="f-left" points="158.1,290.0 215.2,323.0 215.2,319.0 158.1,286.0"/><polygon class="f-top" points="230.8,236.0 288.0,269.0 215.2,311.0 158.1,278.0"/><polygon class="f-right" points="288.0,273.0 215.2,315.0 215.2,311.0 288.0,269.0"/><polygon class="f-left" points="158.1,282.0 215.2,315.0 215.2,311.0 158.1,278.0"/><polygon class="f-top" points="230.8,228.0 288.0,261.0 215.2,303.0 158.1,270.0"/><polygon class="f-right" points="288.0,265.0 215.2,307.0 215.2,303.0 288.0,261.0"/><polygon class="f-left" points="158.1,274.0 215.2,307.0 215.2,303.0 158.1,270.0"/><line class="detail" x1="225.6" y1="241.0" x2="265.5" y2="264.0"/><line class="detail" x1="213.5" y1="248.0" x2="239.5" y2="263.0"/><line class="detail" x1="201.4" y1="255.0" x2="241.2" y2="278.0"/><line class="detail" x1="189.3" y1="262.0" x2="215.2" y2="277.0"/></g><line class="explode explode-c" data-part="c" x1="331.3" y1="257.0" x2="331.3" y2="397.0" marker-end="url(#cover-arrow)"/><g class="part part-c" transform="translate(0.0 -140.0)"><polygon class="f-top" points="331.3,238.0 426.5,293.0 331.3,348.0 236.0,293.0"/><polygon class="f-right" points="426.5,397.0 331.3,452.0 331.3,348.0 426.5,293.0"/><polygon class="f-left" points="236.0,397.0 331.3,452.0 331.3,348.0 236.0,293.0"/><polygon class="f-top" points="331.3,256.0 374.6,281.0 331.3,306.0 288.0,281.0"/><polygon class="f-right" points="374.6,293.0 331.3,318.0 331.3,306.0 374.6,281.0"/><polygon class="f-left" points="288.0,293.0 331.3,318.0 331.3,306.0 288.0,281.0"/><polygon class="inset" points="411.0,376.0 346.9,413.0 346.9,359.0 411.0,322.0"/><line class="detail" x1="402.3" y1="339.0" x2="359.0" y2="364.0"/><line class="detail" x1="402.3" y1="351.0" x2="369.4" y2="370.0"/><line class="detail" x1="402.3" y1="363.0" x2="364.2" y2="385.0"/><g class="click"><line x1="279.8" y1="435.4" x2="281.2" y2="457.3"/><line x1="277.5" y1="434.8" x2="266.2" y2="453.7"/><line x1="276.0" y1="433.0" x2="256.0" y2="442.2"/></g></g><line class="explode explode-d" data-part="d" x1="554.7" y1="391.0" x2="442.1" y2="446.0" marker-end="url(#cover-arrow)"/><g class="part part-d" transform="translate(112.6 -55.0)"><g class="pins"><polygon class="f-top" points="442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0"/><polygon class="f-right" points="449.1,460.0 442.1,464.0 442.1,450.0 449.1,446.0"/><polygon class="f-left" points="435.2,460.0 442.1,464.0 442.1,450.0 435.2,446.0"/><polygon class="f-top" points="428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0"/><polygon class="f-right" points="435.2,452.0 428.3,456.0 428.3,442.0 435.2,438.0"/><polygon class="f-left" points="421.3,452.0 428.3,456.0 428.3,442.0 421.3,438.0"/></g><polygon class="f-top" points="384.1,391.5 399.7,400.5 384.1,409.5 368.5,400.5"/><polygon class="f-right" points="399.7,414.5 384.1,423.5 384.1,409.5 399.7,400.5"/><polygon class="f-left" points="368.5,414.5 384.1,423.5 384.1,409.5 368.5,400.5"/><polygon class="f-top" points="414.4,376.0 456.0,400.0 412.7,425.0 371.1,401.0"/><polygon class="f-right" points="456.0,446.0 412.7,471.0 412.7,425.0 456.0,400.0"/><polygon class="f-left" points="371.1,447.0 412.7,471.0 412.7,425.0 371.1,401.0"/><polygon class="port" points="445.6,440.0 438.7,444.0 438.7,422.0 445.6,418.0"/><polygon class="port" points="430.0,449.0 423.1,453.0 423.1,431.0 430.0,427.0"/><g class="click"><line x1="467.0" y1="449.3" x2="488.9" y2="446.8"/><line x1="466.6" y1="451.6" x2="486.0" y2="461.9"/><line x1="464.9" y1="453.3" x2="475.1" y2="472.8"/></g></g><g class="tag"><line class="leader" x1="50" y1="58" x2="84" y2="72"/><circle cx="50" cy="58" r="15"/><text x="50" y="58" dy="0.36em" text-anchor="middle">A</text></g><g class="tag"><line class="leader" x1="36" y1="214" x2="70" y2="214"/><circle cx="36" cy="214" r="15"/><text x="36" y="214" dy="0.36em" text-anchor="middle">B</text></g><g class="tag"><line class="leader" x1="468" y1="130" x2="420" y2="156"/><circle cx="468" cy="130" r="15"/><text x="468" y="130" dy="0.36em" text-anchor="middle">C</text></g><g class="tag"><line class="leader" x1="574" y1="290" x2="546" y2="330"/><circle cx="574" cy="290" r="15"/><text x="574" y="290" dy="0.36em" text-anchor="middle">D</text></g><g class="tag"><line class="leader" x1="92" y1="492" x2="170" y2="424"/><circle cx="92" cy="492" r="15"/><text x="92" y="492" dy="0.36em" text-anchor="middle">E</text></g></svg>
+            <figcaption>
+              <ol class="legend">
+                <li><span class="tag-inline">A</span> Your data</li>
+                <li><span class="tag-inline">B</span> Retrieval</li>
+                <li><span class="tag-inline">C</span> Model</li>
+                <li><span class="tag-inline">D</span> Tools and MCP</li>
+                <li><span class="tag-inline">E</span> Your systems</li>
+              </ol>
+            </figcaption>
+          </figure>
+        </div>
+        <ul class="strip" aria-label="Facts">
+          <li>AI engineer at Tripletex</li>
+          <li>Shipping production software since 2018</li>
+          <li>Oslo, Norway</li>
+          <li>English and Norwegian</li>
+          <li>Python, TypeScript, React, Node.js</li>
+          <li>RAG, agents, MCP</li>
+        </ul>
+      </section>
+
+      <section class="build" id="build" aria-labelledby="build-title">
+        <div class="wrap">
+          <h2 id="build-title">What I build</h2>
+          <ul class="inventory">
+            <li>
+              <svg class="part-art" viewBox="-70.3 -48.0 136.9 169.0" aria-hidden="true"><polygon class="f-top" points="0.0,-36.0 60.6,-1.0 -8.7,39.0 -69.3,4.0"/><polygon class="f-right" points="60.6,45.0 -8.7,85.0 -8.7,39.0 60.6,-1.0"/><polygon class="f-left" points="-69.3,50.0 -8.7,85.0 -8.7,39.0 -69.3,4.0"/><polygon class="inset" points="-60.6,45.0 -17.3,70.0 -17.3,44.0 -60.6,19.0"/><line class="handle" x1="-46.8" y1="37.0" x2="-31.2" y2="46.0"/><polygon class="f-top" points="-1.7,-32.0 48.5,-3.0 -6.9,29.0 -57.2,0.0"/><polygon class="f-right" points="48.5,0.0 -6.9,32.0 -6.9,29.0 48.5,-3.0"/><polygon class="f-left" points="-57.2,3.0 -6.9,32.0 -6.9,29.0 -57.2,0.0"/><polygon class="f-top" points="-1.7,-37.0 48.5,-8.0 -6.9,24.0 -57.2,-5.0"/><polygon class="f-right" points="48.5,-5.0 -6.9,27.0 -6.9,24.0 48.5,-8.0"/><polygon class="f-left" points="-57.2,-2.0 -6.9,27.0 -6.9,24.0 -57.2,-5.0"/><polygon class="f-top" points="-1.7,-42.0 48.5,-13.0 -6.9,19.0 -57.2,-10.0"/><polygon class="f-right" points="48.5,-10.0 -6.9,22.0 -6.9,19.0 48.5,-13.0"/><polygon class="f-left" points="-57.2,-7.0 -6.9,22.0 -6.9,19.0 -57.2,-10.0"/><line class="detail" x1="-3.5" y1="-31.0" x2="29.4" y2="-12.0"/><line class="detail" x1="-15.6" y1="-24.0" x2="5.2" y2="-12.0"/><line class="detail" x1="-27.7" y1="-17.0" x2="5.2" y2="2.0"/><line class="leader" x1="-8.7" y1="85.0" x2="-69.3" y2="120.0"/><circle class="leader-dot" cx="-8.7" cy="85.0" r="3"/></svg>
+              <h3>AI assistants and RAG</h3>
+              <p>Chat and search that answer from your own documents and data.</p>
+            </li>
+            <li>
+              <svg class="part-art" viewBox="-65.1 -76.0 162.9 222.0" aria-hidden="true"><polygon class="f-top" points="0.0,-70.0 64.1,-33.0 0.0,4.0 -64.1,-33.0"/><polygon class="f-right" points="64.1,37.0 0.0,74.0 0.0,4.0 64.1,-33.0"/><polygon class="f-left" points="-64.1,37.0 0.0,74.0 0.0,4.0 -64.1,-33.0"/><polygon class="inset" points="52.0,22.0 12.1,45.0 12.1,11.0 52.0,-12.0"/><polygon class="f-top" points="39.8,13.0 52.0,20.0 38.1,28.0 26.0,21.0"/><polygon class="f-right" points="52.0,32.0 38.1,40.0 38.1,28.0 52.0,20.0"/><polygon class="f-left" points="26.0,33.0 38.1,40.0 38.1,28.0 26.0,21.0"/><polygon class="f-top" points="62.4,4.0 91.8,21.0 57.2,41.0 27.7,24.0"/><polygon class="f-right" points="91.8,55.0 57.2,75.0 57.2,41.0 91.8,21.0"/><polygon class="f-left" points="27.7,58.0 57.2,75.0 57.2,41.0 27.7,24.0"/><polygon class="port" points="84.9,51.0 79.7,54.0 79.7,36.0 84.9,33.0"/><polygon class="port" points="71.0,59.0 65.8,62.0 65.8,44.0 71.0,41.0"/><line class="leader" x1="57.2" y1="75.0" x2="-64.1" y2="145.0"/><circle class="leader-dot" cx="57.2" cy="75.0" r="3"/></svg>
+              <h3>Agents and MCP servers</h3>
+              <p>Let Claude, ChatGPT or your own agent use your APIs and business systems.</p>
+            </li>
+            <li>
+              <svg class="part-art" viewBox="-73.7 -62.0 152.4 189.0" aria-hidden="true"><polygon class="f-top" points="0.0,-12.0 72.7,30.0 0.0,72.0 -72.7,30.0"/><polygon class="f-right" points="72.7,42.0 0.0,84.0 0.0,72.0 72.7,30.0"/><polygon class="f-left" points="-72.7,42.0 0.0,84.0 0.0,72.0 -72.7,30.0"/><polygon class="f-top" points="0.0,-34.0 72.7,8.0 0.0,50.0 -72.7,8.0"/><polygon class="f-right" points="72.7,20.0 0.0,62.0 0.0,50.0 72.7,8.0"/><polygon class="f-left" points="-72.7,20.0 0.0,62.0 0.0,50.0 -72.7,8.0"/><polygon class="f-top" points="0.0,-56.0 72.7,-14.0 0.0,28.0 -72.7,-14.0"/><polygon class="f-right" points="72.7,-2.0 0.0,40.0 0.0,28.0 72.7,-14.0"/><polygon class="f-left" points="-72.7,-2.0 0.0,40.0 0.0,28.0 -72.7,-14.0"/><line class="leader" x1="0.0" y1="84.0" x2="-72.7" y2="126.0"/><circle class="leader-dot" cx="0.0" cy="84.0" r="3"/></svg>
+              <h3>Full-stack products</h3>
+              <p>The software around the AI, from the front end to the back end and cloud.</p>
+            </li>
+            <li>
+              <svg class="part-art" viewBox="-11.4 -72.0 104.0 179.0" aria-hidden="true"><polygon class="f-top" points="0.0,-66.0 86.6,-16.0 76.2,-10.0 -10.4,-60.0"/><polygon class="f-right" points="86.6,50.0 76.2,56.0 76.2,-10.0 86.6,-16.0"/><polygon class="f-left" points="-10.4,6.0 76.2,56.0 76.2,-10.0 -10.4,-60.0"/><polygon class="inset" points="-1.7,2.0 67.5,42.0 67.5,-6.0 -1.7,-46.0"/><polygon class="play" points="20.8,6.0 20.8,-24.0 45.0,5.0"/><line class="leader" x1="76.2" y1="56.0" x2="-10.4" y2="106.0"/><circle class="leader-dot" cx="76.2" cy="56.0" r="3"/></svg>
+              <h3>Product films</h3>
+              <p>Short films of your product, rendered in code from your designs.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="assembly" id="assembly" aria-labelledby="assembly-title">
+        <div class="wrap assembly-grid">
+          <h2 id="assembly-title">How it fits together</h2>
+          <div class="assembly-figure">
+            <svg class="kit kit-assembly" viewBox="0 0 600 580" aria-hidden="true"><defs><marker id="assembly-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrowhead" d="M0,1 L10,5 L0,9 z"/></marker><clipPath id="assembly-detail-clip"><circle cx="520" cy="210" r="78"/></clipPath></defs><g class="part in part-e" data-part="e" style="--dx:0.0px;--dy:0.0px"><polygon class="f-top" points="262.0,272.0 521.8,422.0 357.3,517.0 97.5,367.0"/><polygon class="f-right" points="521.8,450.0 357.3,545.0 357.3,517.0 521.8,422.0"/><polygon class="f-left" points="97.5,395.0 357.3,545.0 357.3,517.0 97.5,367.0"/><polygon class="port" points="497.6,455.0 480.2,465.0 480.2,455.0 497.6,445.0"/><polygon class="port" points="461.2,476.0 443.9,486.0 443.9,476.0 461.2,466.0"/><polygon class="port" points="424.8,497.0 407.5,507.0 407.5,497.0 424.8,487.0"/><polygon class="port" points="388.4,518.0 371.1,528.0 371.1,518.0 388.4,508.0"/><polygon class="port" points="442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0"/><polygon class="port" points="428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0"/><line class="detail" x1="132.1" y1="401.0" x2="192.7" y2="436.0"/></g><line class="explode in explode-b" data-part="b" x1="145.1" y1="240.5" x2="223.0" y2="349.5" marker-end="url(#assembly-arrow)"/><line class="explode in explode-a" data-part="a" x1="145.1" y1="80.5" x2="223.0" y2="285.5" marker-end="url(#assembly-arrow)"/><g class="part in part-b" data-part="b" style="--dx:-77.9px;--dy:-109.0px"><polygon class="f-top" points="230.8,240.0 301.8,281.0 215.2,331.0 144.2,290.0"/><polygon class="f-right" points="301.8,345.0 215.2,395.0 215.2,331.0 301.8,281.0"/><polygon class="f-left" points="144.2,354.0 215.2,395.0 215.2,331.0 144.2,290.0"/><polygon class="inset" points="152.9,347.0 206.6,378.0 206.6,336.0 152.9,305.0"/><line class="handle" x1="170.2" y1="329.0" x2="189.3" y2="340.0"/><g class="click"><line x1="174.7" y1="384.9" x2="173.6" y2="406.8"/><line x1="172.4" y1="384.1" x2="159.1" y2="401.6"/><line x1="171.1" y1="382.1" x2="150.2" y2="389.1"/></g></g><g class="part in part-a" data-part="a" style="--dx:-77.9px;--dy:-205.0px"><polygon class="f-top" points="230.8,244.0 288.0,277.0 215.2,319.0 158.1,286.0"/><polygon class="f-right" points="288.0,281.0 215.2,323.0 215.2,319.0 288.0,277.0"/><polygon class="f-left" points="158.1,290.0 215.2,323.0 215.2,319.0 158.1,286.0"/><polygon class="f-top" points="230.8,236.0 288.0,269.0 215.2,311.0 158.1,278.0"/><polygon class="f-right" points="288.0,273.0 215.2,315.0 215.2,311.0 288.0,269.0"/><polygon class="f-left" points="158.1,282.0 215.2,315.0 215.2,311.0 158.1,278.0"/><polygon class="f-top" points="230.8,228.0 288.0,261.0 215.2,303.0 158.1,270.0"/><polygon class="f-right" points="288.0,265.0 215.2,307.0 215.2,303.0 288.0,261.0"/><polygon class="f-left" points="158.1,274.0 215.2,307.0 215.2,303.0 158.1,270.0"/><line class="detail" x1="225.6" y1="241.0" x2="265.5" y2="264.0"/><line class="detail" x1="213.5" y1="248.0" x2="239.5" y2="263.0"/><line class="detail" x1="201.4" y1="255.0" x2="241.2" y2="278.0"/><line class="detail" x1="189.3" y1="262.0" x2="215.2" y2="277.0"/></g><line class="explode in explode-c" data-part="c" x1="331.3" y1="257.0" x2="331.3" y2="397.0" marker-end="url(#assembly-arrow)"/><g class="part in part-c" data-part="c" style="--dx:0.0px;--dy:-140.0px"><polygon class="f-top" points="331.3,238.0 426.5,293.0 331.3,348.0 236.0,293.0"/><polygon class="f-right" points="426.5,397.0 331.3,452.0 331.3,348.0 426.5,293.0"/><polygon class="f-left" points="236.0,397.0 331.3,452.0 331.3,348.0 236.0,293.0"/><polygon class="f-top" points="331.3,256.0 374.6,281.0 331.3,306.0 288.0,281.0"/><polygon class="f-right" points="374.6,293.0 331.3,318.0 331.3,306.0 374.6,281.0"/><polygon class="f-left" points="288.0,293.0 331.3,318.0 331.3,306.0 288.0,281.0"/><polygon class="inset" points="411.0,376.0 346.9,413.0 346.9,359.0 411.0,322.0"/><line class="detail" x1="402.3" y1="339.0" x2="359.0" y2="364.0"/><line class="detail" x1="402.3" y1="351.0" x2="369.4" y2="370.0"/><line class="detail" x1="402.3" y1="363.0" x2="364.2" y2="385.0"/><g class="click"><line x1="279.8" y1="435.4" x2="281.2" y2="457.3"/><line x1="277.5" y1="434.8" x2="266.2" y2="453.7"/><line x1="276.0" y1="433.0" x2="256.0" y2="442.2"/></g></g><line class="explode in explode-d" data-part="d" x1="554.7" y1="391.0" x2="442.1" y2="446.0" marker-end="url(#assembly-arrow)"/><g class="part in part-d" data-part="d" style="--dx:112.6px;--dy:-55.0px"><g class="pins"><polygon class="f-top" points="442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0"/><polygon class="f-right" points="449.1,460.0 442.1,464.0 442.1,450.0 449.1,446.0"/><polygon class="f-left" points="435.2,460.0 442.1,464.0 442.1,450.0 435.2,446.0"/><polygon class="f-top" points="428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0"/><polygon class="f-right" points="435.2,452.0 428.3,456.0 428.3,442.0 435.2,438.0"/><polygon class="f-left" points="421.3,452.0 428.3,456.0 428.3,442.0 421.3,438.0"/></g><polygon class="f-top" points="384.1,391.5 399.7,400.5 384.1,409.5 368.5,400.5"/><polygon class="f-right" points="399.7,414.5 384.1,423.5 384.1,409.5 399.7,400.5"/><polygon class="f-left" points="368.5,414.5 384.1,423.5 384.1,409.5 368.5,400.5"/><polygon class="f-top" points="414.4,376.0 456.0,400.0 412.7,425.0 371.1,401.0"/><polygon class="f-right" points="456.0,446.0 412.7,471.0 412.7,425.0 456.0,400.0"/><polygon class="f-left" points="371.1,447.0 412.7,471.0 412.7,425.0 371.1,401.0"/><polygon class="port" points="445.6,440.0 438.7,444.0 438.7,422.0 445.6,418.0"/><polygon class="port" points="430.0,449.0 423.1,453.0 423.1,431.0 430.0,427.0"/><g class="click"><line x1="467.0" y1="449.3" x2="488.9" y2="446.8"/><line x1="466.6" y1="451.6" x2="486.0" y2="461.9"/><line x1="464.9" y1="453.3" x2="475.1" y2="472.8"/></g></g><g class="detail-view" data-from="4"><line class="leader" x1="499.6" y1="285.3" x2="456.0" y2="446.0"/><circle class="detail-bg" cx="520" cy="210" r="78"/><g clip-path="url(#assembly-detail-clip)"><g class="zoom" transform="translate(520 210) scale(2.2) translate(-438.7 -438.0)"><polygon class="f-top" points="262.0,272.0 521.8,422.0 357.3,517.0 97.5,367.0"/><polygon class="f-right" points="521.8,450.0 357.3,545.0 357.3,517.0 521.8,422.0"/><polygon class="f-left" points="97.5,395.0 357.3,545.0 357.3,517.0 97.5,367.0"/><polygon class="port" points="497.6,455.0 480.2,465.0 480.2,455.0 497.6,445.0"/><polygon class="port" points="461.2,476.0 443.9,486.0 443.9,476.0 461.2,466.0"/><polygon class="port" points="424.8,497.0 407.5,507.0 407.5,497.0 424.8,487.0"/><polygon class="port" points="388.4,518.0 371.1,528.0 371.1,518.0 388.4,508.0"/><polygon class="port" points="442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0"/><polygon class="port" points="428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0"/><line class="detail" x1="132.1" y1="401.0" x2="192.7" y2="436.0"/><g class="zoom-d"><polygon class="f-top" points="384.1,391.5 399.7,400.5 384.1,409.5 368.5,400.5"/><polygon class="f-right" points="399.7,414.5 384.1,423.5 384.1,409.5 399.7,400.5"/><polygon class="f-left" points="368.5,414.5 384.1,423.5 384.1,409.5 368.5,400.5"/><polygon class="f-top" points="414.4,376.0 456.0,400.0 412.7,425.0 371.1,401.0"/><polygon class="f-right" points="456.0,446.0 412.7,471.0 412.7,425.0 456.0,400.0"/><polygon class="f-left" points="371.1,447.0 412.7,471.0 412.7,425.0 371.1,401.0"/><polygon class="port" points="445.6,440.0 438.7,444.0 438.7,422.0 445.6,418.0"/><polygon class="port" points="430.0,449.0 423.1,453.0 423.1,431.0 430.0,427.0"/></g><polygon class="hidden-line" points="442.1,442.0 449.1,446.0 442.1,450.0 435.2,446.0"/><polygon class="hidden-line" points="449.1,460.0 442.1,464.0 442.1,450.0 449.1,446.0"/><polygon class="hidden-line" points="435.2,460.0 442.1,464.0 442.1,450.0 435.2,446.0"/><polygon class="hidden-line" points="428.3,434.0 435.2,438.0 428.3,442.0 421.3,438.0"/><polygon class="hidden-line" points="435.2,452.0 428.3,456.0 428.3,442.0 435.2,438.0"/><polygon class="hidden-line" points="421.3,452.0 428.3,456.0 428.3,442.0 421.3,438.0"/><g class="click"><line x1="460.6" y1="447.2" x2="468.6" y2="446.3"/><line x1="460.4" y1="448.3" x2="467.5" y2="452.1"/><line x1="459.6" y1="449.2" x2="463.3" y2="456.3"/></g></g></g><circle class="detail-ring" cx="520" cy="210" r="78"/></g><g class="done-mark" data-from="5"><circle cx="112" cy="118" r="30"/><path d="M98 119 l10 10 l20 -22"/></g></svg>
+          </div>
+          <ol class="steps">
+            <li class="step" data-step="1">
+              <span class="step-number" aria-hidden="true">1</span>
+              <h3>Your systems</h3>
+              <p>Start with what you have: your product, your API, your data.</p>
+            </li>
+            <li class="step" data-step="2">
+              <span class="step-number" aria-hidden="true">2</span>
+              <h3>A model</h3>
+              <p>Add a model that fits the job, from Claude or GPT to an open model.</p>
+            </li>
+            <li class="step" data-step="3">
+              <span class="step-number" aria-hidden="true">3</span>
+              <h3>Your data, indexed</h3>
+              <p>Index your documents, so answers come from your data.</p>
+            </li>
+            <li class="step" data-step="4">
+              <span class="step-number" aria-hidden="true">4</span>
+              <h3>Tools and MCP</h3>
+              <p>
+                Connect tools and MCP servers, so it can look things up and act, with the
+                permissions you set.
+              </p>
+            </li>
+            <li class="step" data-step="5">
+              <span class="step-number" aria-hidden="true">5</span>
+              <h3>Shipped</h3>
+              <p>Put it where your users are: inside your product, or inside Claude and ChatGPT.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+          <h2 id="work-title">Work</h2>
+          <figure class="film">
+            <video
+              controls
+              playsinline
+              preload="none"
+              width="1920"
+              height="1080"
+              poster="assets/planloom-poster.webp"
+            >
+              <source src="assets/planloom-1080.mp4" type="video/mp4" />
+              <a href="assets/planloom-1080.mp4">Download the Planloom film (MP4, 11 MB)</a>
+            </video>
+            <figcaption>
+              <strong>Planloom</strong>, a 40-second product film rendered in code from the design's
+              SVG exports, with a score made in code too.
+              <a href="https://github.com/renzel/svg-product-film">How it's made</a>
+            </figcaption>
+          </figure>
+
+          <table class="spec">
+            <caption class="visually-hidden">Selected work, newest first</caption>
+            <thead>
+              <tr>
+                <th scope="col">Year</th>
+                <th scope="col">Project</th>
+                <th scope="col">What</th>
+                <th scope="col">Built with</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2024–now</td>
+                <th scope="row">Tripletex</th>
+                <td>AI engineer for cloud accounting software used by small businesses in Norway.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <th scope="row">
+                  <a href="https://github.com/renzel/trmnl-api-mcp">trmnl-api-mcp</a>
+                </th>
+                <td>
+                  MCP server for the TRMNL API: eight tools to read devices and manage playlists,
+                  with strict input checks and tests.
+                </td>
+                <td>MCP TypeScript SDK, Node.js</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <th scope="row">
+                  <a href="https://github.com/renzel/svg-product-film">svg-product-film</a>
+                </th>
+                <td>Agent skill that turns SVG design exports into a product film with sound.</td>
+                <td>Headless Chrome, ffmpeg</td>
+              </tr>
+              <tr>
+                <td>2018–2024</td>
+                <th scope="row">Upstacked, via Bluetree</th>
+                <td>
+                  Full-stack, DevOps and data science for an operations SaaS, including anomaly
+                  detection for cybersecurity.
+                </td>
+                <td>React, Python, Django, Spark, Kubernetes, GCP</td>
+              </tr>
+              <tr>
+                <td>2021–2023</td>
+                <th scope="row">Statens vegvesen, via Bluetree</th>
+                <td>
+                  A new system for monitoring infrastructure and applications at the Norwegian
+                  road authority.
+                </td>
+                <td>React, TypeScript, .NET, C#, Docker, Kubernetes</td>
+              </tr>
+            </tbody>
+            <tbody class="spec-education">
+              <tr class="spec-group">
+                <th colspan="4" scope="rowgroup">Education</th>
+              </tr>
+              <tr>
+                <td>2017–2019</td>
+                <th scope="row">University of South-Eastern Norway</th>
+                <td>MSc in Systems Engineering with Embedded Systems.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014–2017</td>
+                <th scope="row">Western Norway University of Applied Sciences</th>
+                <td>Bachelor in Electronics, with an exchange at Auckland University of Technology.</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="helpline" id="contact" aria-labelledby="contact-title">
+        <div class="wrap helpline-grid">
+          <div class="helpline-copy">
+            <h2 id="contact-title">Need an AI engineer?</h2>
+            <a class="helpline-email" href="mailto:trond@rensel.dev?subject=Project"
+              >trond@rensel.dev</a
+            >
+            <p>Tell me what you want to build. I'm based in Oslo and work in English and Norwegian.</p>
+            <ul class="helpline-links">
+              <li><a href="https://www.linkedin.com/in/trond-rensel-618232137/">LinkedIn</a></li>
+              <li><a href="https://github.com/renzel">GitHub</a></li>
+            </ul>
+          </div>
+          <figure class="portrait">
+            <img
+              src="assets/trond-rensel-800.webp"
+              srcset="
+                assets/trond-rensel-480.webp   480w,
+                assets/trond-rensel-800.webp   800w,
+                assets/trond-rensel-1200.webp 1200w
+              "
+              sizes="(min-width: 960px) 380px, 70vw"
+              width="800"
+              height="721"
+              alt="Trond Rensel, smiling, in glasses and a grey sweater."
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <div class="wrap colophon-row">
+        <p>© 2026 Trond Rensel</p>
+        <a href="privacy/">Privacy notice</a>
+        <a href="#top">Back to the top</a>
+      </div>
+    </footer>
   </body>
 </html>

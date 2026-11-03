@@ -25,3 +25,9 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+
+# Impeccable design tool: local state and review captures
+.impeccable/review/
+.impeccable/hook.cache.json
+.impeccable/config.local.json
+.impeccable/live/sessions/
