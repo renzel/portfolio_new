@@ -15,7 +15,7 @@ Visitor mode: Persuade.
 
 - **Who:** potential clients, either software companies or Norwegian businesses, who arrive from LinkedIn, GitHub, referrals or an email and decide within a minute whether to get in touch.
 - **Action:** write to trond@rensel.dev ("Start a project"). LinkedIn and GitHub are secondary.
-- **Proof:** the Tripletex role (general terms only), trmnl-api-mcp, svg-product-film, the Planloom film, and the Bluetree projects (Upstacked, Statens vegvesen).
+- **Proof:** the Tripletex role (general terms only), trmnl-api-mcp, svg-product-film, the Planloom film (a demo for a made-up app, captioned as one), and the Bluetree projects (Upstacked, Statens vegvesen).
 - **Constraints:** English only. No company legal block. No AI-hype visuals. Short copy. All content present in the HTML without JavaScript.
 
 ## Direction contract
@@ -47,4 +47,4 @@ The AI system assembling onto "your API" with a click.
 
 ## Unresolved
 
-Booking link, prices, availability and engagement format are not provided yet. The Planloom caption also needs confirming: is it a demo or client work?
+Booking link, prices, availability and engagement format are not provided yet.
